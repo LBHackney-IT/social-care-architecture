@@ -11,3 +11,9 @@ This repository is a "central landing zone" to document and share the architectu
 | [LBH Social Care](https://github.com/LBHackney-IT/lbh-social-care)                                       | Front End                                                                |
 | [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                          |
 | [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                          |
+
+## Current State
+
+![Current State](images/2021-03-25-architecture.png)
+
+[Drawio Image Source](images/2021-03-25-architecture.drawio)
