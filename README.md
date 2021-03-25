@@ -2,6 +2,12 @@
 
 This repository is a "central landing zone" to document and share the architecture of the interim social care system.
 
+## Architecture Decision Records
+
+Lightweight architectural decision records are stored in the [decisions directory](decisions/README.md).
+
+An architectural decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences. Further information can be found on Michael Nygard's [blog](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).
+
 ## Related Repositories
 
 | Name                                                                                                     | Description                                                              |
