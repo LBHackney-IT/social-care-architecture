@@ -17,3 +17,9 @@ This repository is a "central landing zone" to document and share the architectu
 ![Current State](images/2021-03-25-architecture.png)
 
 [Drawio Image Source](images/2021-03-25-architecture.drawio)
+
+### Data Flow
+
+![Data Flow](images/data-flows.png)
+
+[Drawio Image Source](images/data-flows.drawio)
