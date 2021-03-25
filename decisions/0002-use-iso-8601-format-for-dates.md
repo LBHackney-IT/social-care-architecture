@@ -1,4 +1,4 @@
-# 2. use iso 8601 format for dates
+# 2. Use iso 8601 format for dates
 
 Date: 2021-03-25
 
