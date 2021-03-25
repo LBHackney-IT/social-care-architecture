@@ -17,3 +17,15 @@ An architectural decision record (ADR) is a document that captures an important 
 | [LBH Social Care](https://github.com/LBHackney-IT/lbh-social-care)                                       | Front End                                                                |
 | [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                          |
 | [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                          |
+
+## Current State
+
+![Current State](images/2021-03-25-architecture.png)
+
+[Drawio Image Source](images/2021-03-25-architecture.drawio)
+
+### Data Flow
+
+![Data Flow](images/data-flows.png)
+
+[Drawio Image Source](images/data-flows.drawio)
