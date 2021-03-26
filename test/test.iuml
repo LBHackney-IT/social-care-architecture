@@ -1,0 +1,22 @@
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/General/all>
+!include <awslib/Compute/all>
+!include <awslib/Database/all>
+!include <awslib/AWSSimplified>
+!include <awslib/mobile/all.puml>
+!include <awslib/Storage/all.puml>
+
+skinparam linetype polyline
+skinparam defaultTextAlignment center
+
+title Residents Social Care Platform API
+
+package "Mosaic-Production" {
+    APIGateway(apiGateway, "API Gateway", "")
+    Lambda(lambda, "Lambda\n.NET Core App", "")
+    RDSPostgreSQLinstance(db, "Database", "")
+    apiGateway -r-> lambda
+    lambda -r-> db
+}
+@enduml
