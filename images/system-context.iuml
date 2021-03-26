@@ -1,0 +1,32 @@
+@startuml
+!include <c4/C4_Context.puml>
+
+'ref http://plantuml.com/stdlib
+!include <office/Users/user.puml>
+!include <office/Users/mobile_user.puml>
+
+'LAYOUT_TOP_DOWN
+LAYOUT_AS_SKETCH()
+LAYOUT_WITH_LEGEND()
+
+title Interim Social Care System
+
+Person(scp, Social Care Practitioner, "<$user> <$mobile_user>\n Adult and Childrens Practitioners" )
+Person(data_insights_team, Data and Insight Team, "<$user> <$mobile_user>" )
+
+Enterprise_Boundary(c0, "Interim Social Care System") {
+
+  System(social_care_front_end, "Social Care Front End", "Allows practitioners to edit case information.")
+  System(social_care_service_api, "Social Care Case Viewer Service API", "Provides some abstraction")
+  System_Ext(google_auth, "Hackney Google Groups", "Provides User Authentication")
+  System(mosaic_historic_data_api, "Historic Mosaic Data API", "Serves historic read-only case and visit data")
+  System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
+
+}
+
+Rel_Neighbor(scp, social_care_front_end, "Uses")
+Rel_R(social_care_front_end, social_care_service_api, "Uses")
+Rel_R(social_care_service_api, google_auth, "Auths with")
+Rel_R(social_care_service_api, mosaic_historic_data_api, "Retrieves from")
+Rel_R(scp, google_forms, "Submits to")
+@enduml
