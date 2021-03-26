@@ -28,7 +28,7 @@ An architectural decision record (ADR) is a document that captures an important 
 
 The diagram below shows the overall data flow between the various moving components for Here To Help.
 
-![System Context Diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-context.iuml)
+![System Context Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-context.iuml)
 
 ### Data Flow
 
