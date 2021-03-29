@@ -1,0 +1,45 @@
+!$lbh_a01 = "#00664f"
+!$lbh_a02 = "#00b341"
+!$lbh_a03 = "#84bd00"
+!$lbh_a04 = "#a4d65e"
+!$lbh_black = "#0b0c0c"
+!$lbh_grey_1 = "#6f777b"
+!$lbh_grey_2 = "#bfc1c3"
+!$lbh_grey_3 = "#dee0e2"
+!$lbh_grey_4 = "#f8f8f8"
+!$lbh_white = "#ffffff"
+!$lbh_e01 = "#672146"
+!$lbh_e02 = "#aa0061"
+!$lbh_e03 = "#df1995"
+!$lbh_e04 = "#eb6fbd"
+!$lbh_f01 = "#81312f"
+!$lbh_f02 = "#be3a34"
+!$lbh_f03 = "#e03c31"
+!$lbh_f04 = "#ff6a13"
+
+!$COLOR_C_5 = $lbh_f01
+!$COLOR_C_4 = $lbh_f02
+!$COLOR_C_3 = $lbh_f03
+!$COLOR_C_2 = $lbh_f04
+!$COLOR_C_1 = $lbh_black
+
+' Greens and Reds
+!$COLOR_A_5 = $lbh_a01
+!$COLOR_A_4 = $lbh_a02
+!$COLOR_A_3 = $lbh_a03
+!$COLOR_A_2 = $lbh_a04
+!$COLOR_A_1 = $lbh_black
+!$COLOR_NEUTRAL = $lbh_white
+!$COLOR_B_1 = $lbh_black
+!$COLOR_B_2 = $lbh_e04
+!$COLOR_B_3 = $lbh_e03
+!$COLOR_B_4 = $lbh_e02
+!$COLOR_B_5 = $lbh_e01
+
+UpdateSkinparamsAndLegendEntry("person", $bgColor=$COLOR_A_5, $fontColor=$COLOR_NEUTRAL, $borderColor=$COLOR_A_1, $shadowing="true")
+UpdateSkinparamsAndLegendEntry("system", $bgColor=$COLOR_A_4, $fontColor=$COLOR_NEUTRAL, $borderColor=$COLOR_A_2)
+UpdateSkinparamsAndLegendEntry("external_person", $bgColor=$COLOR_B_5, $fontColor=$COLOR_NEUTRAL, $borderColor=$COLOR_B_1)
+UpdateSkinparamsAndLegendEntry("external_system", $bgColor=$COLOR_B_4, $fontColor=$COLOR_NEUTRAL, $borderColor=$COLOR_B_2)
+
+AddTagSupport("hackney system", $bgColor=$COLOR_A_3, $fontColor=$COLOR_NEUTRAL)
+AddTagSupport("legacy", $bgColor=$COLOR_C_4, $fontColor=$COLOR_NEUTRAL, $borderColor=$COLOR_C_2)
