@@ -12,11 +12,17 @@ This repository is a "central landing zone" to document and share the architectu
 | [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                          |
 | [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                          |
 
-### C4 Context Diagram
+## Context Diagram
 
-The diagram below shows the overall data flow between the various moving components for Here To Help.
+The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care system. It depicts the key users and systems.
 
 ![System Context Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-context.iuml)
+
+## Container Diagram
+
+The The [container diagram](https://c4model.com/#ContainerDiagram) shows the interacting systems within the Social Care system.
+
+![System container Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-container.iuml)
 
 
 ## Architecture Decision Records
