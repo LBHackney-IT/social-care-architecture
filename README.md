@@ -27,7 +27,7 @@ An architectural decision record (ADR) is a document that captures an important 
 
 ## Existing Documentation
 
-There are a number of existing diagrams, that existed prior to this repository. Until the are superseded, they are included for reference.
+Diagrams that existed prior to this repository are included for reference. The will be removed when they are superseded.
 
 ### Current State
 
