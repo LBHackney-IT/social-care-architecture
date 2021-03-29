@@ -3,8 +3,7 @@
 'ref http://plantuml.com/stdlib
 !include <c4/C4_Context.puml>
 !include <office/Users/user.puml>
-!include ./c4_shared.puml
-'!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/add-c4-diagrams/docs/diagrams/c4_shared.puml
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
 LAYOUT_AS_SKETCH()
 
