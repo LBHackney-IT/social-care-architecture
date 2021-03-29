@@ -1,29 +1,35 @@
 @startuml
+'!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+!include <c4/C4_Container.puml>
 
 'ref http://plantuml.com/stdlib
-!include <c4/C4_Context.puml>
 !include <office/Users/user.puml>
+!include <office/Users/mobile_user.puml>
 
 LAYOUT_AS_SKETCH()
 LAYOUT_WITH_LEGEND()
 
-title Social Care System Context Diagram
+
+title Social Care System Container Diagram
 
 Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children" )
 Person_Ext(data_insights_team, Data and Insights Team, "<$user>" )
 
+System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
+System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
+System_Ext(qlik, "Qlik Analytics", "Case progress reporting")
+
 System_Boundary(system, "Social Care") {
 
-  System(social_care_application, "Social Care Application", "Allows practitioners to view case information.")
-  System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
-  System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
-  System_Ext(qlik, "Qlik Analytics", "Case progress reporting")
+    Container(social_care_front_end, "Social Care Front End", "Lambda, React - TypeScript", "Allows practitioners to edit case information.")
+    Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, .Net - C#", "Provides some abstraction")
+    Container(mosaic_historic_data_api, "Historic Mosaic Data API",  "Lambda, .Net - C#", "Serves historic read-only case and visit data")
 }
 
-Rel(care_practitioners, social_care_application, "Views data and navigates cases using")
-Rel(social_care_application, google_auth, "Authenticates practitioners via")
-Rel(google_forms, social_care_application, "Periodic data import")
-Rel(care_practitioners, google_forms, "Redirected to add data with")
-Rel(data_insights_team, qlik, "View case statistics with")
+Rel(care_practitioners, social_care_front_end, "Read from", "JSON/HTTPS"))
+Rel(social_care_front_end, social_care_service_api, "Reads from", "JSON/HTTPS")
+Rel(social_care_service_api, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
+Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
+Rel(care_practitioners, google_forms, "Submits to", "JSON/HTTPS")
 
 @enduml
