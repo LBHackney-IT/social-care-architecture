@@ -4,10 +4,9 @@
 'ref http://plantuml.com/stdlib
 !include <office/Users/user.puml>
 !include <office/Users/mobile_user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
 LAYOUT_AS_SKETCH()
-LAYOUT_WITH_LEGEND()
-
 
 title Social Care System Container Diagram
 
@@ -30,5 +29,7 @@ Rel(social_care_front_end, social_care_service_api, "Reads from", "JSON/HTTPS")
 Rel(social_care_service_api, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
 Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
 Rel(care_practitioners, google_forms, "Submits to", "JSON/HTTPS")
+
+SHOW_DYNAMIC_LEGEND()
 
 @enduml

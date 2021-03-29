@@ -3,9 +3,9 @@
 'ref http://plantuml.com/stdlib
 !include <c4/C4_Context.puml>
 !include <office/Users/user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
 LAYOUT_AS_SKETCH()
-LAYOUT_WITH_LEGEND()
 
 title Social Care System Context Diagram
 
@@ -25,5 +25,7 @@ Rel(social_care_application, google_auth, "Authenticates practitioners via")
 Rel(google_forms, social_care_application, "Periodic data import")
 Rel(care_practitioners, google_forms, "Redirected to add data with")
 Rel(data_insights_team, qlik, "View case statistics with")
+
+SHOW_DYNAMIC_LEGEND()
 
 @enduml
