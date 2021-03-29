@@ -22,7 +22,7 @@ System_Boundary(system, "Social Care") {
 
     Container(social_care_front_end, "Social Care Front End", "Lambda, React - TypeScript", "Allows practitioners to edit case information.")
     Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, .Net - C#", "Provides some abstraction")
-    Container(mosaic_historic_data_api, "Historic Mosaic Data API",  "Lambda, .Net - C#", "Serves historic read-only case and visit data")
+    Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, .Net - C#", "Serves historic read-only case and visit data")
 }
 
 Rel(care_practitioners, social_care_front_end, "Read from", "JSON/HTTPS"))
