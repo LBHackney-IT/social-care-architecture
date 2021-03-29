@@ -4,9 +4,10 @@
 'ref http://plantuml.com/stdlib
 !include <office/Users/user.puml>
 !include <office/Users/mobile_user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/add-c4-diagrams/docs/diagrams/c4_shared.puml
 
 LAYOUT_AS_SKETCH()
-LAYOUT_WITH_LEGEND()
+SHOW_DYNAMIC_LEGEND()
 
 
 title Social Care System Container Diagram
