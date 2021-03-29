@@ -1,32 +1,28 @@
 @startuml
-!include <c4/C4_Context.puml>
-
 'ref http://plantuml.com/stdlib
+!include <c4/C4_Context.puml>
 !include <office/Users/user.puml>
-!include <office/Users/mobile_user.puml>
 
-'LAYOUT_TOP_DOWN
 LAYOUT_AS_SKETCH()
 LAYOUT_WITH_LEGEND()
 
-title Interim Social Care System
+title Social Care System Context Diagram
 
-Person(scp, Social Care Practitioner, "<$user> <$mobile_user>\n Adult and Childrens Practitioners" )
-Person(data_insights_team, Data and Insight Team, "<$user> <$mobile_user>" )
+Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children" )
+Person_Ext(data_insights_team, Data and Insights Team, "<$user>" )
 
-Enterprise_Boundary(c0, "Interim Social Care System") {
+System_Boundary(system, "Social Care") {
 
-  System(social_care_front_end, "Social Care Front End", "Allows practitioners to edit case information.")
-  System(social_care_service_api, "Social Care Case Viewer Service API", "Provides some abstraction")
-  System_Ext(google_auth, "Hackney Google Groups", "Provides User Authentication")
-  System(mosaic_historic_data_api, "Historic Mosaic Data API", "Serves historic read-only case and visit data")
+  System(social_care_application, "Social Care Application", "Allows practitioners to view case information.")
+  System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
   System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
-
+  System_Ext(qlik, "Qlik Analytics", "Case progress reporting")
 }
 
-Rel_Neighbor(scp, social_care_front_end, "Uses")
-Rel_R(social_care_front_end, social_care_service_api, "Uses")
-Rel_R(social_care_service_api, google_auth, "Auths with")
-Rel_R(social_care_service_api, mosaic_historic_data_api, "Retrieves from")
-Rel_R(scp, google_forms, "Submits to")
+Rel(care_practitioners, social_care_application, "Views data and navigates cases using")
+Rel(social_care_application, google_auth, "Authenticates practitioners via")
+Rel(google_forms, social_care_application, "Periodic data import")
+Rel(care_practitioners, google_forms, "Redirected to add data with")
+Rel(data_insights_team, qlik, "View case statistics with")
+
 @enduml
