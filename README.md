@@ -16,13 +16,13 @@ This repository is a "central landing zone" to document and share the architectu
 
 The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care system. It depicts the key users and systems.
 
-![System Context Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-context.iuml)
+![System Context Diagram](images/system-context.png)
 
 ## Container Diagram
 
 The [container diagram](https://c4model.com/#ContainerDiagram) shows the interacting systems within the Social Care system.
 
-![System container Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/LBHackney-IT/social-care-architecture/test-plantuml/images/system-container.iuml)
+![System container Diagram](images/system-container.png)
 
 
 ## Architecture Decision Records
