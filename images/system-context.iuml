@@ -8,22 +8,24 @@ LAYOUT_AS_SKETCH()
 
 title Social Care System Context Diagram
 
-Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children" )
-Person_Ext(data_insights_team, Data and Insights Team, "<$user>" )
+Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children")
+Person(data_insights_team, Data and Insights Team, "<$user>")
 
 System_Boundary(system, "Social Care") {
 
   System(social_care_application, "Social Care Application", "Allows practitioners to view case information.")
-  System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
-  System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
   System_Ext(qlik, "Qlik Analytics", "Case progress reporting")
+  System_Ext(google, "Google Services", "Forms\nDocs\nUser group management")
 }
 
-Rel(care_practitioners, social_care_application, "Views data and navigates cases using")
-Rel(social_care_application, google_auth, "Authenticates practitioners via")
-Rel(google_forms, social_care_application, "Periodic data import")
-Rel(care_practitioners, google_forms, "Redirected to add data with")
-Rel(data_insights_team, qlik, "View case statistics with")
+Rel(care_practitioners, social_care_application, "Manage cases using")
+Rel(social_care_application, google, "Authenticates with groups")
+Rel(care_practitioners, google, "Redirected by Social Care App to add data with forms")
+Rel(data_insights_team, qlik, "View case statistics and generate reports with")
+Rel(data_insights_team, social_care_application, "WHAT IS THE KEY ACTIVITY HERE?")
+Rel(qlik, social_care_application, "Periodic data export")
+Rel(care_practitioners, qlik, "View dashboards and reports")
+Rel(google, qlik, "Data moved somehow???")
 
 SHOW_DYNAMIC_LEGEND()
 @enduml
