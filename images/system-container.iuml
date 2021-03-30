@@ -25,11 +25,12 @@ System_Boundary(system, "Social Care") {
 }
 
 Rel(care_practitioners, social_care_front_end, "Read from", "JSON/HTTPS"))
-Rel(social_care_front_end, social_care_service_api, "Reads from", "JSON/HTTPS")
-Rel(social_care_service_api, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
+Rel(social_care_front_end, social_care_service_api, "Read / Write", "JSON/HTTPS")
+Rel(social_care_front_end, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
 Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
 Rel(care_practitioners, google_forms, "Submits to", "JSON/HTTPS")
+Rel(google_forms, social_care_service_api, "Data is imported to (manual/peridoc ?)", "?????")
+Rel(qlik, google_forms, "Reads Data from (TBC with Daro)", "?????")
 
 SHOW_DYNAMIC_LEGEND()
-
 @enduml

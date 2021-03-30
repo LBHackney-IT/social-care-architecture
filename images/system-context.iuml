@@ -1,5 +1,4 @@
 @startuml
-
 'ref http://plantuml.com/stdlib
 !include <c4/C4_Context.puml>
 !include <office/Users/user.puml>
@@ -27,5 +26,4 @@ Rel(care_practitioners, google_forms, "Redirected to add data with")
 Rel(data_insights_team, qlik, "View case statistics with")
 
 SHOW_DYNAMIC_LEGEND()
-
 @enduml
