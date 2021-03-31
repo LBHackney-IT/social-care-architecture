@@ -11,25 +11,44 @@ LAYOUT_AS_SKETCH()
 title Social Care System Container Diagram
 
 Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children" )
-Person_Ext(data_insights_team, Data and Insights Team, "<$user>" )
+Person(data_insight_team, Data and Insight Team )
 
-System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
-System_Ext(google_forms, "Google Forms", "Temporary data submissions (partial?)")
-System_Ext(qlik, "Qlik Analytics", "Case progress reporting")
+System_Ext(qlik, "Qlik Analytics", "ETL & Case progress reporting")
+
+System_Boundary(googles, "Google") {
+  System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
+  System_Ext(google_forms, "Google Forms", "Data submissions (57 forms)")
+  System_Ext(google_sheets, "Google Sheets", "Form submission data")
+  System_Ext(google_docs, "Google Docs", "Generated for viewing (AppScript)")
+}
 
 System_Boundary(system, "Social Care") {
 
-    Container(social_care_front_end, "Social Care Front End", "Lambda, React - TypeScript", "Allows practitioners to edit case information.")
-    Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, .Net - C#", "Provides some abstraction")
-    Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, .Net - C#", "Serves historic read-only case and visit data")
+  Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
+  Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "To be DESCRIBED")
+  Container(mosaic_platform_api, "Mosaic Platform Api", "Lambda, C#", "Provides person search")
+  Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Serves historic read-only case and visit data")
 }
 
-Rel(care_practitioners, social_care_front_end, "Read from", "JSON/HTTPS"))
-Rel(social_care_front_end, social_care_service_api, "Reads from", "JSON/HTTPS")
-Rel(social_care_service_api, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
+Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS")
+Rel(care_practitioners, google_forms, "Redirected by Social Care App to add data in", "JSON/HTTPS")
+Rel(care_practitioners, google_docs, "Redirected by Social Care App to view form submissions", "HTTPS")
+Rel(care_practitioners, qlik, "View / create dashboards and reports")
+
+Rel_D(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
+
+Rel(social_care_front_end, social_care_service_api, "Read / Write", "JSON/HTTPS")
+Rel(social_care_front_end, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
+
 Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
-Rel(care_practitioners, google_forms, "Submits to", "JSON/HTTPS")
+Rel(social_care_service_api, mosaic_platform_api, "Retrieves from", "JSON/HTTPS")
+
+Rel(qlik, social_care_service_api, "Hourly CSV export of form data to S3", "Qlik / AWS integration")
+
+Rel(google_forms, google_sheets, "Submitted data stored in")
+Rel(google_sheets, qlik, "Data ingestion", "Google API")
+Rel(google_sheets, google_docs, "Generated from form data")
+Rel_U(google_docs, google_auth, "Access restricted with")
 
 SHOW_DYNAMIC_LEGEND()
-
 @enduml
