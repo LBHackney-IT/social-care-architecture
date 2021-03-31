@@ -9,6 +9,7 @@ This repository is a "central landing zone" to document and share the architectu
 | [LBH Social Care](https://github.com/LBHackney-IT/lbh-social-care)                                       | Front end repository                                                              |
 | [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                                   |
 | [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                                   |
+| [Mosaic Resident Information API](https://github.com/LBHackney-IT/mosaic-resident-information-api)       | Mosaic Platform API                                                   |
 | [Hackney AWS Infrastructure](https://github.com/LBHackney-IT/infrastructure)                             | [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code) of AWS infrastructure |
 | [API-Playbook-v2-beta](https://github.com/LBHackney-IT/API-Playbook-v2-beta)                             | API design Guidance                                                               |
 
