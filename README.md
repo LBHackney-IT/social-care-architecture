@@ -2,6 +2,22 @@
 
 This repository is a "central landing zone" to document and share the architecture of the interim social care system.
 
+<!-- TOC -->
+- [Vision](#vision)
+- [Process and Tools](process.md)
+- [Related Repositories](#related-repositories)
+- [Context Diagram](#context-diagram)
+- [Container Diagram](#container-diagram)
+- [Architecture Decision Records](#architecture-decision-records)
+- [Existing Documentation](#existing-documentation)
+  - [Current State](#current-state)
+  - [Data Flow](#data-flow)
+<!-- /TOC -->
+
+## Vision
+
+The Social Care System was created as an interim system, in response to a loss of service.
+
 ## Related Repositories
 
 | Name                                                                                                     | Description                                                                       |
