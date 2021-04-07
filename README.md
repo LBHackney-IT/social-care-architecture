@@ -2,7 +2,6 @@
 
 This repository is a "central landing zone" to document and share the architecture of the interim social care system.
 
-<!-- TOC -->
 - [Vision](#vision)
 - [Process and Tools](process.md)
 - [Related Repositories](#related-repositories)
@@ -12,7 +11,6 @@ This repository is a "central landing zone" to document and share the architectu
 - [Existing Documentation](#existing-documentation)
   - [Current State](#current-state)
   - [Data Flow](#data-flow)
-<!-- /TOC -->
 
 ## Vision
 
