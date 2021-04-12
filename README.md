@@ -18,14 +18,14 @@ The Social Care System was created as an interim system, in response to a loss o
 
 ## Related Repositories
 
-| Name                                                                                                     | Description                                                                       |
-|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [LBH Social Care](https://github.com/LBHackney-IT/lbh-social-care)                                       | Front end repository                                                              |
-| [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                                   |
-| [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                                   |
-| [Mosaic Resident Information API](https://github.com/LBHackney-IT/mosaic-resident-information-api)       | Mosaic Platform API                                                   |
-| [Hackney AWS Infrastructure](https://github.com/LBHackney-IT/infrastructure)                             | [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code) of AWS infrastructure |
-| [API-Playbook-v2-beta](https://github.com/LBHackney-IT/API-Playbook-v2-beta)                             | API design Guidance                                                               |
+| Name                                                                                                     | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [LBH Social Care Frontend](https://github.com/LBHackney-IT/lbh-social-care-frontend)                     | The Social Care Frontend allows Social Care Practitioners to edit cases and residents information. |
+| [Social Care Case Viewer API](https://github.com/LBHackney-IT/social-care-case-viewer-api)               |                                                                                                    |
+| [Residents Social Care Platform API](https://github.com/LBHackney-IT/residents-social-care-platform-api) |                                                                                                    |
+| [Mosaic Resident Information API](https://github.com/LBHackney-IT/mosaic-resident-information-api)       | Mosaic Platform API                                                                                |
+| [Hackney AWS Infrastructure](https://github.com/LBHackney-IT/infrastructure)                             | [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code) of AWS infrastructure                  |
+| [API-Playbook-v2-beta](https://github.com/LBHackney-IT/API-Playbook-v2-beta)                             | API design Guidance                                                                                |
 
 ## Context Diagram
 
