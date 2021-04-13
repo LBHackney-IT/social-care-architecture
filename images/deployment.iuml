@@ -1,0 +1,77 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+
+' https://github.com/plantuml-stdlib/C4-PlantUML#supported-diagram-types
+' Example diagram source: https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Deployment%20Diagram%20Sample%20-%20bigbankplc.puml
+
+' Following include does not work - ask Ant?
+' !include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+
+LAYOUT_AS_SKETCH()
+
+title Social Care System Deployment Diagram
+
+Deployment_Node(aws, "AWS", "Region: eu-west-2") {
+  Deployment_Node(aws_production_apis, "ProductionAPIs", "Account") {
+    Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
+      Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
+    }
+
+    Deployment_Node(aws_production_apis_lambda, "Lambda") {
+      Container(frontend_api_lambda, "Social Care Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Social Care System.")
+    }
+  }
+
+  Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
+    Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
+      Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
+      Container(mosaic_platform_api_api_gateway, "Mosaic Resident Information API", "API Gateway", "Provides routing and auth via API keys.")
+      Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
+    }
+
+    Deployment_Node(aws_mosaic_production_lambda, "Lambda") {
+      Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
+      Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
+      Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
+      Container(mosaic_platform_api_lambda, "Mosaic Resident Information API", "Lambda, C#", "Provides platform API capabilities by providing information about residents from Mosaic to the Social Care System.")
+      Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
+    }
+
+    Deployment_Node(aws_mosaic_production_docdb, "DocumentDB") {
+      ContainerDb(service_api_docdb, "Social Care Case Viewer API", "MongoDB", "Stores form data.")
+    }
+
+    Deployment_Node(aws_mosaic_production_rds, "RDS") {
+      ContainerDb(service_api_rds, "Social Care Case Viewer API", "PostgreSQL", "Stores persons, workers and allocations.")
+      ContainerDb(platform_api_rds, "Resident Social Care Platform API", "PostgreSQL", "Stores historic case notes and visits.")
+    }
+
+    Deployment_Node(aws_mosaic_production_s3, "S3") {
+      Container(service_api_s3, "Social Care Case Viewer API - Qlik Import", "CSV", "Stores allocations and form data.")
+    }
+  }
+}
+
+Rel(frontend_api_gateway, frontend_api_lambda, "Uses", "HTTPS")
+Rel(frontend_api_lambda, service_api_api_gateway, "Uses", "JSON/HTTPS")
+
+Rel(service_api_api_gateway, service_api_lambda, "Uses", "HTTPS")
+Rel(service_api_lambda, service_api_rds, "Reads from and writes to", "Entity Framework")
+Rel(service_api_lambda, service_api_docdb, "Reads from and writes to", "Entity Framework")
+
+Rel(service_api_s3, service_api_mongodb_import_lambda, "Triggers", "S3 Event Notification")
+Rel(service_api_mongodb_import_lambda, service_api_docdb, "Imports into")
+
+Rel(service_api_s3, service_api_pg_import_lambda, "Triggers", "S3 Event Notification")
+Rel(service_api_pg_import_lambda, service_api_rds, "Imports into")
+
+Rel(service_api_lambda, mosaic_platform_api_api_gateway, "Uses", "JSON/HTTPS")
+Rel(mosaic_platform_api_api_gateway, mosaic_platform_api_lambda, "Uses", "HTTPS")
+Rel(mosaic_platform_api_lambda, service_api_rds, "Reads from", "Entity Framework")
+
+Rel(service_api_lambda, platform_api_api_gateway, "Uses", "JSON/HTTPS")
+Rel(platform_api_api_gateway, platform_api_lambda, "Uses", "HTTPS")
+Rel(platform_api_lambda, platform_api_rds, "Reads from", "Entity Framework")
+
+SHOW_DYNAMIC_LEGEND()
+@enduml
