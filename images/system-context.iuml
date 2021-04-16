@@ -4,8 +4,6 @@
 !include <office/Users/user.puml>
 !include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
-LAYOUT_AS_SKETCH()
-
 title Social Care System Context Diagram
 
 Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children")
