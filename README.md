@@ -44,19 +44,3 @@ The [container diagram](https://c4model.com/#ContainerDiagram) shows the interac
 Lightweight architectural decision records are stored in the [decisions directory](decisions/README.md).
 
 An architectural decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences. Further information can be found on Michael Nygard's [blog](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).
-
-## Existing Documentation
-
-Diagrams that existed prior to this repository are included for reference. The will be removed when they are superseded.
-
-### Current State
-
-![Current State](images/2021-03-25-architecture.png)
-
-[Drawio Image Source](images/2021-03-25-architecture.drawio)
-
-### Data Flow
-
-![Data Flow](images/data-flows.png)
-
-[Drawio Image Source](images/data-flows.drawio)
