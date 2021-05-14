@@ -7,6 +7,7 @@ This repository is a "central landing zone" to document and share the architectu
 - [Related Repositories](#related-repositories)
 - [Context Diagram](#context-diagram)
 - [Container Diagram](#container-diagram)
+- [Deployment Diagram](#deployment-diagram)
 - [Architecture Decision Records](#architecture-decision-records)
 - [Existing Documentation](#existing-documentation)
   - [Current State](#current-state)
@@ -38,6 +39,14 @@ The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highe
 The [container diagram](https://c4model.com/#ContainerDiagram) shows the interacting systems within the Social Care system.
 
 ![System container Diagram](images/system-container.png)
+
+## Deployment Diagram
+
+> Note: This is not representative of current deployment but will be soon.
+
+The [deployment diagram](https://c4model.com/#ContainerDiagram) shows the key aspects of the deployed system in AWS.
+
+![Deployment Diagram](images/deployment.png)
 
 ## Architecture Decision Records
 
