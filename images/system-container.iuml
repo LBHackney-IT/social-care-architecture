@@ -4,7 +4,7 @@
 'ref http://plantuml.com/stdlib
 !include <office/Users/user.puml>
 !include <office/Users/mobile_user.puml>
-!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+' !include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
 title Social Care System Container Diagram
 
@@ -27,9 +27,9 @@ System_Boundary(system, "Social Care") {
   Container(mosaic_platform_api, "Mosaic Resident Information Platform API", "Lambda, C#", "Provides person search")
   Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
   
-  Container(adult_social_care_front_end, "Adult Social Care Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
-  Container(adult_social_care_api, "Adult Social Care API", "Lambda, .NET (C#)", "Allows adult social care workers to build and manage care packages.")
-  Container(adult_social_care_transactions_api, "Adult Social Care Transactions API", "Lambda, .NET (C#)", "Manages transactions and payments relating to adult social care.")
+  Container(adult_social_care_front_end, "Adult Social Care Packages Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
+  Container(adult_social_care_api, "Adult Social Care Packages API", "Lambda, .NET (C#)", "Allows adult social care workers to build and manage care packages.")
+  Container(adult_social_care_transactions_api, "Adult Social Care Package Transactions API", "Lambda, .NET (C#)", "Manages transactions and payments relating to adult social care.")
 }
 
 Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS")
