@@ -42,8 +42,6 @@ The [container diagram](https://c4model.com/#ContainerDiagram) shows the interac
 
 ## Deployment Diagram
 
-> Note: This is not representative of current deployment but will be soon.
-
 The [deployment diagram](https://c4model.com/#ContainerDiagram) shows the key aspects of the deployed system in AWS.
 
 ![Deployment Diagram](images/deployment.png)
