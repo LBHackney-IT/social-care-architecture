@@ -1,6 +1,6 @@
 @startuml
 'ref http://plantuml.com/stdlib
-!include <c4/C4_Context.puml>
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
 !include <office/Users/user.puml>
 !include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
 
