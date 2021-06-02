@@ -38,7 +38,7 @@ The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highe
 
 The [container diagram](https://c4model.com/#ContainerDiagram) shows the interacting systems within the Social Care system.
 
-![System container Diagram](images/system-container.png)
+![System container Diagram](images/system-container.svg)
 
 ## Deployment Diagram
 

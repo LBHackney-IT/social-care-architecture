@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1041px" preserveAspectRatio="none" style="width:1376px;height:1041px;background:#FFFFFF;" version="1.1" viewBox="0 0 1376 1041" width="1376px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jch3chzsviuw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="359" x="502" y="16.708">Social Care System Container Diagram</text><!--MD5=[990d9a6e75dfc0b31ac96c22292f7806]
+cluster googles--><rect fill="#FFFFFF" height="592.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="409" x="718" y="323.4531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="64" x="890.5" y="340.3047">Google</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="895" y="355.2168">[System]</text><!--MD5=[8ae77ada6169822435c3d3bcb01b6727]
+cluster system--><rect fill="#FFFFFF" height="616" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="503" x="7" y="316.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="207.5" y="333.8047">Social Care</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="231" y="348.7168">[System]</text><!--MD5=[743b25f5500fd16bfcf559a6d1ecca37]
+entity google_auth--><rect fill="#AA0061" height="103.8125" style="stroke:#EB6FBD;stroke-width:1.5;" width="162" x="734" y="593.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="135" x="747.5" y="618.8047">Google Groups</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="817" y="635.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="767" y="651.8701">Provides User</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="744" y="668.167">Authentication and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="766.5" y="684.4639">Authorisation</text><!--MD5=[b8dfd8be7a939d2516701236e069e6d6]
+entity google_forms--><rect fill="#AA0061" height="87.5156" style="stroke:#EB6FBD;stroke-width:1.5;" width="179" x="901.5" y="374.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="127" x="927.5" y="399.3047">Google Forms</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="993" y="416.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="915.5" y="432.3701">Data submissions (57</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="967.5" y="448.667">forms)</text><!--MD5=[d47feeefa22e922eafd3d1aca68613f1]
+entity google_sheets--><rect fill="#AA0061" height="71.2188" style="stroke:#EB6FBD;stroke-width:1.5;" width="180" x="931" y="610.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="133" x="954.5" y="635.3047">Google Sheets</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1023" y="652.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="945" y="668.3701">Form submission data</text><!--MD5=[26893fb4980661fb51fc930aba25dd49]
+entity google_docs--><rect fill="#AA0061" height="87.5156" style="stroke:#EB6FBD;stroke-width:1.5;" width="188" x="894" y="811.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="115" x="930.5" y="836.8047">Google Docs</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="990" y="853.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="908" y="869.8701">Generated for viewing</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="946" y="886.167">(AppScript)</text><!--MD5=[aa8374f49f4ec34f7429b478e210251d]
+entity social_care_front_end--><rect fill="#438DD5" height="101.4844" style="stroke:#3C7FC0;stroke-width:1.5;" width="220" x="273" y="367.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="196" x="285" y="392.8047">Social Care Front End</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="156" x="305" y="407.7168">[Lambda, Next.js (React)]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="385" y="423.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="287" y="439.8389">Allows practitioners to edit</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="320" y="456.1357">case information.</text><!--MD5=[14700f941117e1460a0310c6ed983dfa]
+entity social_care_service_api--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="207" x="169.5" y="585.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="194" y="610.8047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="169" x="188.5" y="629.4297">Viewer Service API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="230.5" y="644.3418">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="275" y="660.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="183.5" y="676.4639">Provides backend API for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="182" y="692.7607">the Social Care Front End</text><!--MD5=[73710266c470714beea4702c423f9415]
+entity mosaic_platform_api--><rect fill="#438DD5" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="23.5" y="794.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="149" x="54.5" y="819.8047">Mosaic Resident</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="197" x="33.5" y="838.4297">Information Platform</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="29" x="117.5" y="857.0547">API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="89.5" y="871.9668">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="134" y="887.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="51" y="904.0889">Provides person search</text><!--MD5=[03501dc4ff15c03bafe8f7d1a0bc22ab]
+entity mosaic_historic_data_api--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="218" x="276" y="795.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="198" x="286" y="820.8047">Residents Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="117" x="326.5" y="839.4297">Platform API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="342.5" y="854.3418">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="387" y="870.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="292.5" y="886.4639">Provides historic case and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="352" y="902.7607">visit data</text><!--MD5=[564eb174a95b0d1b7998de3483d33164]
+entity care_practitioners--><rect fill="#00664F" filter="url(#f1jch3chzsviuw)" height="185.8438" style="stroke:#0B0C0C;stroke-width:1.5;" width="156" x="831" y="27.9531"/><image height="48" width="48" x="885" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACGklEQVR4Xu2YoU4FMRBF3y/wC/wCv4B/CsMHrCYYEhIcAgwO8STBEdCQoEiQTzyFISQ4EgQGPNxsA1nuzLSd7pZdwc0RXLLbGabttMts1synBfvRYe9h8+RgcXdz+7BaPj+Ci+X93tXZ+n4jn3TAPo/m/PTt4/3TEFLcONyVb2XBPsXazjaKwSloQrXk62nYR0E2kcJIHV1fykESsI+SWZuuMLlynBjsbTAFHC1PqKsczYS9AQblONnCTpQDmrA3QOU5jkdyQBP2BtjJHMQjdCw5pg57A9fmknK0APYGHMEpx/5nb8ARnBo+oafXFw7ikaMbsTfAwclBPBp+UffZ9tgQckAT9jbFG82xgBpPQtM6OgIF7XFrcSzHicE+Cv5W13Zz9MMf2GeQWSd3bQLs80CwSKnQI3zrpgt7D7g4Y1IQHjUDuGagO5SnEmA/OuxHh70BvrawbjBB6HIg+ZWDh8OTmEScG455ZC9AEur6xS/DokE85AfwAx629iB+n3Wise+A94uPC0tIK1Et9t8UHxRJobSxz232LX3O9hyh8Gad2LfdhQeoIMydDK0nZK3KwaWfLeT/pjxBWEycjUwIO5nfqylldZNXW049KZd/8vxGZSm3267p8x+FMuGmMK2ElM3/n9AvTS6hxBqa9fgaLJPyWUK+9rHalX7Esm/m6A38agWhA+vXTvYtSBy3Mxx+ldBTiSQ0JuzH5gtdG077QFXZFQAAAABJRU5ErkJggg==" y="37.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="855" y="100.8047">Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="111" x="853.5" y="119.4297">Practitioner</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="911" y="136.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="865" y="184.1982"/><image height="48" width="44" x="865" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAwCAIAAADl8g+2AAAB9ElEQVR4Xs2XMU7EMBBFcwWuwBW4Aj0VDQdwjWiQkOgooKGj2BLRIaihRaLkUHzWwnb+jGfHTjZZ6UnJzyaeb3s89g5DOFsf1qvA2s3p4+39x9vrzzfAzfnm4ejyQr7mgrUDxNt8fcbwxPX7c48V1rtIvTc4vgnyQwvWJh4HAOPUNh6s64SXJxmvBnzIFqqwroCeyUg2SB3Zjg7rCsg4GcYGcyfb0WGt0TEMEW+GstY4ubuSATx4Z4S1BtqSATx4Z4S1RtO6IGRrCqw1DsJE93R4qwVrDexVMoAHDKFsTYG1xkEs0cG9a5R45yK4TaBPMoyNdy6C28TQXrkbNlLWddBo7SwjQZGVLVRhbeL00eYgNJoYtj6MeUH+NjsI7SYi0kpn+AhrDSyNWpbhee2n+Kt8qMB6DMKnJGjtaBoqFFz56wjW/yC83LfwxNM52KXitmOyWG+xdyyjZ7Bu1FaMjfzkD9buooRgGJgEvvKsXryjbCik5RTMjrKnlMJZi6bDZ89SdJ8bWuGzZymMnJqd0SorTchX98doxaa7jhPDFEanjXS3WEJERmmR7hZYnIRiwlmjZiTnZjKx5NKI5NxMJpYpUyV5D1rRRF4gyYR8ad/kTTVeuv9jTSGv0nhZuFJF2MTClSqS9/R4sY9Se4JNrAzrNfgFXUj/Fbw6+5wAAAAASUVORK5CYII=" y="139.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="913" y="184.1982"/><image height="48" width="44" x="913" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAwCAIAAADl8g+2AAAB9ElEQVR4Xs2XMU7EMBBFcwWuwBW4Aj0VDQdwjWiQkOgooKGj2BLRIaihRaLkUHzWwnb+jGfHTjZZ6UnJzyaeb3s89g5DOFsf1qvA2s3p4+39x9vrzzfAzfnm4ejyQr7mgrUDxNt8fcbwxPX7c48V1rtIvTc4vgnyQwvWJh4HAOPUNh6s64SXJxmvBnzIFqqwroCeyUg2SB3Zjg7rCsg4GcYGcyfb0WGt0TEMEW+GstY4ubuSATx4Z4S1BtqSATx4Z4S1RtO6IGRrCqw1DsJE93R4qwVrDexVMoAHDKFsTYG1xkEs0cG9a5R45yK4TaBPMoyNdy6C28TQXrkbNlLWddBo7SwjQZGVLVRhbeL00eYgNJoYtj6MeUH+NjsI7SYi0kpn+AhrDSyNWpbhee2n+Kt8qMB6DMKnJGjtaBoqFFz56wjW/yC83LfwxNM52KXitmOyWG+xdyyjZ7Bu1FaMjfzkD9buooRgGJgEvvKsXryjbCik5RTMjrKnlMJZi6bDZ89SdJ8bWuGzZymMnJqd0SorTchX98doxaa7jhPDFEanjXS3WEJERmmR7hZYnIRiwlmjZiTnZjKx5NKI5NxMJpYpUyV5D1rRRF4gyYR8ad/kTTVeuv9jTSGv0nhZuFJF2MTClSqS9/R4sY9Se4JNrAzrNfgFXUj/Fbw6+5wAAAAASUVORK5CYII=" y="139.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="845" y="200.4951">Adult and Children</text><!--MD5=[b940e26350b19dd30e4b2844298c79b4]
+entity data_insight_team--><rect fill="#00664F" filter="url(#f1jch3chzsviuw)" height="105.25" style="stroke:#0B0C0C;stroke-width:1.5;" width="177" x="370.5" y="68.4531"/><image height="48" width="48" x="435" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACGklEQVR4Xu2YoU4FMRBF3y/wC/wCv4B/CsMHrCYYEhIcAgwO8STBEdCQoEiQTzyFISQ4EgQGPNxsA1nuzLSd7pZdwc0RXLLbGabttMts1synBfvRYe9h8+RgcXdz+7BaPj+Ci+X93tXZ+n4jn3TAPo/m/PTt4/3TEFLcONyVb2XBPsXazjaKwSloQrXk62nYR0E2kcJIHV1fykESsI+SWZuuMLlynBjsbTAFHC1PqKsczYS9AQblONnCTpQDmrA3QOU5jkdyQBP2BtjJHMQjdCw5pg57A9fmknK0APYGHMEpx/5nb8ARnBo+oafXFw7ikaMbsTfAwclBPBp+UffZ9tgQckAT9jbFG82xgBpPQtM6OgIF7XFrcSzHicE+Cv5W13Zz9MMf2GeQWSd3bQLs80CwSKnQI3zrpgt7D7g4Y1IQHjUDuGagO5SnEmA/OuxHh70BvrawbjBB6HIg+ZWDh8OTmEScG455ZC9AEur6xS/DokE85AfwAx629iB+n3Wise+A94uPC0tIK1Et9t8UHxRJobSxz232LX3O9hyh8Gad2LfdhQeoIMydDK0nZK3KwaWfLeT/pjxBWEycjUwIO5nfqylldZNXW049KZd/8vxGZSm3267p8x+FMuGmMK2ElM3/n9AvTS6hxBqa9fgaLJPyWUK+9rHalX7Esm/m6A38agWhA+vXTvYtSBy3Mxx+ldBTiSQ0JuzH5gtdG077QFXZFQAAAABJRU5ErkJggg==" y="78.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="151" x="380.5" y="141.3047">Data and Insight</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="52" x="433" y="159.9297">Team</text><!--MD5=[0cebc030e76ea46a659898b416f67ffd]
+entity qlik--><rect fill="#AA0061" height="87.5156" style="stroke:#EB6FBD;stroke-width:1.5;" width="174" x="528" y="374.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="123" x="553.5" y="399.3047">Qlik Analytics</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="617" y="416.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="542" y="432.3701">ETL &amp; Case progress</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="580.5" y="448.667">reporting</text><!--MD5=[a363298ef46e0cc09c4d1b782b041be3]
+link care_practitioners to social_care_front_end--><path d="M830.961,141.7691 C771.132,160.1711 689.504,192.5951 633,243.9531 C611.501,263.4941 625.405,285.1911 601,300.9531 C583.947,311.9671 528.719,301.0971 510,308.9531 C481.403,320.9541 454.535,341.8641 432.942,362.1441 " fill="none" id="care_practitioners-to-social_care_front_end" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="426.995,367.8401,434.8481,364.4743,430.6986,360.1406,426.995,367.8401" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="146" x="634" y="270.0918">Manage cases using</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="666" y="284.0605">[JSON/HTTPS]</text><!--MD5=[33b5ecdbcf67450ba86e7afd5c66b196]
+link care_practitioners to google_forms--><path d="M942.79,214.1751 C946.068,224.1731 949.207,234.2411 952,243.9531 C963.69,284.6071 974.038,331.4441 981.132,366.2001 " fill="none" id="care_practitioners-to-google_forms" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="982.775,374.3161,984.1283,365.88,978.2476,367.0703,982.775,374.3161" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="968" y="256.0918">Redirected by Social</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="116" x="982" y="270.0605">Care App to add</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="51" x="1016.5" y="284.0293">data in</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="1001" y="297.998">[JSON/HTTPS]</text><!--MD5=[ecfd2ef6465600292d6892f89a730af8]
+link care_practitioners to google_docs--><path d="M987.256,144.2571 C1035.95,162.5811 1094.86,193.8531 1125,243.9531 C1244.39,442.4391 1252.12,563.3911 1138,764.9531 C1126.62,785.0471 1108.77,801.1441 1089.3,813.8461 " fill="none" id="care_practitioners-to-google_docs" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1082.35,818.1991,1090.723,816.4984,1087.5401,811.4122,1082.35,818.1991" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="1220" y="511.0918">Redirected by Social</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="121" x="1231.5" y="525.0605">Care App to view</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="127" x="1230.5" y="539.0293">form submissions</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1270" y="552.998">[HTTPS]</text><!--MD5=[9b99fa6a8dc875c1ef2186a5dae55cc3]
+link care_practitioners to qlik--><path d="M840.859,214.1181 C833.993,224.0811 827.254,234.1581 821,243.9531 C805.366,268.4401 813.21,284.8931 789,300.9531 C762.538,318.5071 746.429,294.8041 718,308.9531 C690.911,322.4351 667.146,346.1161 649.29,367.9221 " fill="none" id="care_practitioners-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="644.178,374.3131,651.5185,369.9409,646.8336,366.1923,644.178,374.3131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="94" x="833.5" y="263.0918">View / create</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="822" y="277.0605">dashboards and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="56" x="854.5" y="291.0293">reports</text><!--MD5=[d2c0a26ad9189578580a504843f96697]
+link data_insight_team to qlik--><path d="M441.395,173.6681 C431.502,213.2061 426.357,266.5951 456,300.9531 C471.849,319.3231 488.418,297.8691 510,308.9531 C537.059,322.8491 561.162,346.4421 579.429,368.0851 " fill="none" id="data_insight_team-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="584.665,374.4261,581.884,366.3474,577.2577,370.168,584.665,374.4261" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="95" x="477" y="263.0918">Manage data</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="108" x="470.5" y="277.0605">extraction and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="457" y="291.0293">reporting pipelines</text><!--MD5=[3637dd49ccf4735f2ad20322e89ee715]
+link social_care_front_end to social_care_service_api--><path d="M285.129,469.1941 C275.513,477.8391 267.083,487.7291 261,498.9531 C248.151,522.6621 248.005,551.7771 252.242,577.7531 " fill="none" id="social_care_front_end-to-social_care_service_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="253.689,585.7041,255.2078,577.2962,249.3048,578.3707,253.689,585.7041" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="262" y="525.0918">Read / Write</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="265" y="539.0605">[JSON/HTTPS]</text><!--MD5=[c16c2205e88ea5436663ca5cffe41c22]
+link social_care_front_end to google_auth--><path d="M370.519,469.2661 C366.487,497.7681 367.279,532.4221 387,555.9531 C392.486,562.4991 601.962,603.8601 725.779,627.8271 " fill="none" id="social_care_front_end-to-google_auth" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="733.808,629.3801,726.5237,624.9148,725.3837,630.8055,733.808,629.3801" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="395" y="518.0918">Authenticates</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="122" x="388" y="532.0605">practitioners via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="408" y="546.0293">[JSON/HTTPS]</text><!--MD5=[e2f74f3d45ed05174501143454101ffb]
+link social_care_service_api to mosaic_historic_data_api--><path d="M304.795,706.0011 C318.628,731.6901 334.901,761.9111 349.16,788.3941 " fill="none" id="social_care_service_api-to-mosaic_historic_data_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="353.125,795.7571,351.9738,787.291,346.6909,790.1355,353.125,795.7571" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="109" x="337" y="748.0918">Retrieves from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="350.5" y="762.0605">[JSON/HTTPS]</text><!--MD5=[273d71af26c2be0b76584693c04f1e03]
+link social_care_service_api to mosaic_platform_api--><path d="M225.638,706.0891 C218.204,715.9231 210.752,726.1221 204,735.9531 C192.756,752.3251 181.305,770.4601 170.941,787.5361 " fill="none" id="social_care_service_api-to-mosaic_platform_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="166.569,794.7811,173.2709,789.4817,168.1338,786.3816,166.569,794.7811" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="109" x="205" y="748.0918">Retrieves from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="218.5" y="762.0605">[JSON/HTTPS]</text><!--MD5=[7850c0a6e327286b7ca6b4626b5a31f9]
+link qlik to social_care_service_api--><path d="M593.76,462.6441 C577.101,492.5361 551.343,531.2381 519,555.9531 C479.684,585.9971 429.278,606.5881 384.341,620.3311 " fill="none" id="qlik-to-social_care_service_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="376.6,622.6471,385.1242,623.2284,383.4045,617.4801,376.6,622.6471" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="131" x="575.5" y="518.0918">Hourly CSV export</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="134" x="576" y="532.0605">of form data to S3</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="142" x="572" y="546.0293">[Qlik / AWS integration]</text><!--MD5=[1dddf73b2309d3064e4954f7a26bb264]
+link google_forms to google_sheets--><path d="M993.04,462.6491 C994.67,489.5811 997.45,524.9011 1002,555.9531 C1004.22,571.1221 1007.49,587.5781 1010.69,602.1661 " fill="none" id="google_forms-to-google_sheets" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1012.45,610.0581,1013.6336,601.5965,1007.778,602.9047,1012.45,610.0581" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="113" x="1003" y="525.0918">Submitted data</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1028.5" y="539.0605">stored in</text><!--MD5=[583f13f09c356bc9630d56176cf1b91d]
+link google_sheets to qlik--><path d="M958.743,610.3741 C889.564,571.9511 777.443,509.6771 700.167,466.7571 " fill="none" id="google_sheets-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="692.801,462.6651,698.3378,469.1724,701.2513,463.9272,692.801,462.6651" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="107" x="856" y="525.0918">Data ingestion</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="872.5" y="539.0605">[Google API]</text><!--MD5=[2ab70f5dac50fa09d2ecccbaa104da05]
+link google_sheets to google_docs--><path d="M1015.48,681.7681 C1010.21,714.9911 1002.2,765.4531 996.19,803.3501 " fill="none" id="google_sheets-to-google_docs" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="994.86,811.7201,999.0773,804.2895,993.1516,803.3487,994.86,811.7201" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1008" y="748.0918">Generated from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="73" x="1032" y="762.0605">form data</text><!--MD5=[0f9a1bcba88253e8af146535c8c76a84]
+reverse link google_auth to google_docs--><path d="M829.726,705.6051 C836.687,725.7701 846.51,747.6131 860,764.9531 C873.928,782.8571 892.388,798.6561 910.942,811.8191 " fill="none" id="google_auth-backto-google_docs" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="827.197,697.9721,826.8649,706.5097,832.5605,704.6229,827.197,697.9721" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="129" x="861" y="748.0918">Access restricted</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="31" x="912" y="762.0605">with</text><rect fill="#FFFFFF" height="79.1875" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="159" x="1195" y="945.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1201" y="965.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1262" y="965.9482"/><rect fill="#00664F" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="1201" y="969.25"/><text fill="#0B0C0C" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1205" y="982.2451">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1217" y="982.2451"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="1221" y="982.2451">person (shadow)</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1346" y="982.2451"/><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="1201" y="985.5469"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1205" y="998.542">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1217" y="998.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="1221" y="998.542">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1298" y="998.542"/><rect fill="#AA0061" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="1201" y="1001.8438"/><text fill="#EB6FBD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1205" y="1014.8389">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1217" y="1014.8389"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1221" y="1014.8389">external_system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1348" y="1014.8389"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1348" y1="952.9531" y2="952.9531"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1348" y1="969.25" y2="969.25"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1348" y1="985.5469" y2="985.5469"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1348" y1="1001.8438" y2="1001.8438"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1348" y1="1018.1406" y2="1018.1406"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1201" x2="1201" y1="952.9531" y2="1018.1406"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="1348" x2="1348" y1="952.9531" y2="1018.1406"/><!--MD5=[2c6871b78a8b8ff8d9f2dea100d4bdcd]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Container.puml
+
+'ref http://plantuml.com/stdlib
+!include <office/Users/user.puml>
+!include <office/Users/mobile_user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+
+title Social Care System Container Diagram
+
+Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children" )
+Person(data_insight_team, Data and Insight Team )
+
+System_Ext(qlik, "Qlik Analytics", "ETL & Case progress reporting")
+
+System_Boundary(googles, "Google") {
+  System_Ext(google_auth, "Google Groups", "Provides User Authentication and Authorisation")
+  System_Ext(google_forms, "Google Forms", "Data submissions (57 forms)")
+  System_Ext(google_sheets, "Google Sheets", "Form submission data")
+  System_Ext(google_docs, "Google Docs", "Generated for viewing (AppScript)")
+}
+
+System_Boundary(system, "Social Care") {
+
+  Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
+  Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
+  Container(mosaic_platform_api, "Mosaic Resident Information Platform API", "Lambda, C#", "Provides person search")
+  Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
+}
+
+Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS")
+Rel(care_practitioners, google_forms, "Redirected by Social Care App to add data in", "JSON/HTTPS")
+Rel(care_practitioners, google_docs, "Redirected by Social Care App to view form submissions", "HTTPS")
+Rel(care_practitioners, qlik, "View / create dashboards and reports")
+
+Rel_D(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
+
+Rel(social_care_front_end, social_care_service_api, "Read / Write", "JSON/HTTPS")
+Rel(social_care_front_end, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
+
+Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
+Rel(social_care_service_api, mosaic_platform_api, "Retrieves from", "JSON/HTTPS")
+
+Rel(qlik, social_care_service_api, "Hourly CSV export of form data to S3", "Qlik / AWS integration")
+
+Rel(google_forms, google_sheets, "Submitted data stored in")
+Rel(google_sheets, qlik, "Data ingestion", "Google API")
+Rel(google_sheets, google_docs, "Generated from form data")
+Rel_U(google_docs, google_auth, "Access restricted with")
+
+SHOW_DYNAMIC_LEGEND()
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontStyle plain
+    BackgroundColor #FFFFFF
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor #FFFFFF
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $user [44x48/16] {
+00000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000
+000000000000000000048AA851000000000000000000
+0000000000000000059AAAAAAA710000000000000000
+00000000000000008AAAAAAAAAAA2000000000000000
+0000000000000008AAAAAAAAAAAA9100000000000000
+000000000000006AAAAAAAAAAAAAA900000000000000
+00000000000001AAAAAAAAAAAAAAAA50000000000000
+00000000000007AAAAAAAAAAAAAAAA80000000000000
+0000000000001AAAAAAAAAAAAAAAAAA2000000000000
+0000000000003AAAAAAAAAAAAAAAAAA5000000000000
+0000000000005AAAAAAAAAAAAAAAAAA8000000000000
+0000000000006AAAAAAAAAAAAAAAAAAA000000000000
+0000000000006AAAAAAAAAAAAAAAAAAA000000000000
+0000000000005AAAAAAAAAAAAAAAAAA9000000000000
+0000000000004AAAAAAAAAAAAAAAAAA6000000000000
+0000000000001AAAAAAAAAAAAAAAAAA2000000000000
+00000000000008AAAAAAAAAAAAAAAA90000000000000
+00000000000002AAAAAAAAAAAAAAAA60000000000000
+000000000000007AAAAAAAAAAAAAAA10000000000000
+0000000000000019AAAAAAAAAAAAA300000000000000
+00000000000000019AAAAAAAAAAA3000000000000000
+000000000000000017AAAAAAAA830000000000000000
+00000000000000000017AAAA83000000000000000000
+00000000000021000000011000000001000000000000
+000000000029AA30000000000000007AA40000000000
+0000000026AAAAA610000000000038AAAA8300000000
+00000005AAAAAAAAA40000000028AAAAAAAA70000000
+0000007AAAAAAAAAAAA8666679AAAAAAAAAAA9200000
+000006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900000
+000019AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA50000
+00004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA80000
+00008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1000
+0000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3000
+0002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6000
+0004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8000
+0006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA000
+0007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA100
+0008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA300
+0009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA400
+0009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA600
+000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA700
+001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA800
+002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA800
+004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900
+005AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900
+00000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000
+}
+
+sprite $mobile_user [48x45/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000169AAA850000000000000000000000000
+000000000000004ABBBBBBB9200000000000000000000000
+00000000000005ABBBBBBBBBA20000000000000000000000
+0000000000002BBBBBBBBBBBBA0000000000000000000000
+000000000000ABBBBBBBBBBBBB8000000000000000000000
+000000000004BBBBBBBBBBBBBBA100000000000000000000
+000000000007BBBBBBBBBBBBBBB400000000000000000000
+00000000000ABBBBBBBBBBBBBBB800000000000000000000
+00000000000BBBBBBBBBBBBBBBBA00000000000000000000
+00000000000BBBBBBBBBBBBBBBBA00000000000000000000
+00000000000ABBBBBBBBBBBBBBB900000000000000000000
+000000000008BBBBBBBBBBBBBBB600000000000000000000
+000000000005BBBBBBBBBBBBBBA200000000000000000000
+000000000001BBBBBBBBBBBBBBA000000000000000000000
+0000000000004BBBBBBBBBBBBA2000000000000000000000
+00000000000008BBBBBBBBBBB50000000000000000000000
+000000000000007ABBBBBBBA500000000000000000000000
+00000000000000039ABBBA82000000000000000000000000
+000000000000000000221000000000000000000000000000
+000000000389400000000000005982000000000000000000
+000000028ABBA7100000000017BBBA7103ABBBBBBBBBBA30
+0000006ABBBBBBA631000136ABBBBBBA04BBBBBBBBBBBB50
+000008BBBBBBBBBBBBBABBBBBBBBBBBA04B8888888888B50
+00004BBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+0000ABBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+0002BBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+0004BBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+0007BBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+0009BBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+000ABBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+002BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+003BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+004BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+005BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+006BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+007BBBBBBBBBBBBBBBBBBBBBBBBBBBBA04A0000000000B50
+008AAAAAAAAAAAAAAAAAAAAAAAAAAAAA04A0000000000B50
+0000000000000000000000000000000004A2222222222B50
+0000000000000000000000000000000004BBBBBBBBBBBB50
+0000000000000000000000000000000004BBBB8007BBBB50
+0000000000000000000000000000000004BBBBBBBBBBBB50
+000000000000000000000000000000000066666666666610
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam database<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam database<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+
+
+skinparam rectangle<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam database<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam queue<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+
+skinparam rectangle<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam database<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam queue<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+
+
+title Social Care System Container Diagram
+
+rectangle "<$person>\n==Social Care Practitioner\n\n <$user> <$user>\n Adult and Children" <<person>> as care_practitioners 
+rectangle "<$person>\n==Data and Insight Team" <<person>> as data_insight_team 
+
+rectangle "==Qlik Analytics\n\n ETL & Case progress reporting" <<external_system>> as qlik 
+
+rectangle "==Google\n<size:12>[System]</size>" <<boundary>> as googles  {
+  rectangle "==Google Groups\n\n Provides User Authentication and Authorisation" <<external_system>> as google_auth 
+  rectangle "==Google Forms\n\n Data submissions (57 forms)" <<external_system>> as google_forms 
+  rectangle "==Google Sheets\n\n Form submission data" <<external_system>> as google_sheets 
+  rectangle "==Google Docs\n\n Generated for viewing (AppScript)" <<external_system>> as google_docs 
+}
+
+rectangle "==Social Care\n<size:12>[System]</size>" <<boundary>> as system  {
+
+  rectangle "==Social Care Front End\n//<size:12>[Lambda, Next.js (React)]</size>//\n\n Allows practitioners to edit case information." <<container>> as social_care_front_end 
+  rectangle "==Social Care Case Viewer Service API\n//<size:12>[Lambda, C#]</size>//\n\n Provides backend API for the Social Care Front End" <<container>> as social_care_service_api 
+  rectangle "==Mosaic Resident Information Platform API\n//<size:12>[Lambda, C#]</size>//\n\n Provides person search" <<container>> as mosaic_platform_api 
+  rectangle "==Residents Social Care Platform API\n//<size:12>[Lambda, C#]</size>//\n\n Provides historic case and visit data" <<container>> as mosaic_historic_data_api 
+}
+
+care_practitioners - ->> social_care_front_end : **Manage cases using**\n//<size:12>[JSON/HTTPS]</size>//
+care_practitioners - ->> google_forms : **Redirected by Social Care App to add data in**\n//<size:12>[JSON/HTTPS]</size>//
+care_practitioners - ->> google_docs : **Redirected by Social Care App to view form submissions**\n//<size:12>[HTTPS]</size>//
+care_practitioners - ->> qlik : **View / create dashboards and reports**
+
+data_insight_team -DOWN->> qlik : **Manage data extraction and reporting pipelines**
+
+social_care_front_end - ->> social_care_service_api : **Read / Write**\n//<size:12>[JSON/HTTPS]</size>//
+social_care_front_end - ->> google_auth : **Authenticates practitioners via**\n//<size:12>[JSON/HTTPS]</size>//
+
+social_care_service_api - ->> mosaic_historic_data_api : **Retrieves from**\n//<size:12>[JSON/HTTPS]</size>//
+social_care_service_api - ->> mosaic_platform_api : **Retrieves from**\n//<size:12>[JSON/HTTPS]</size>//
+
+qlik - ->> social_care_service_api : **Hourly CSV export of form data to S3**\n//<size:12>[Qlik / AWS integration]</size>//
+
+google_forms - ->> google_sheets : **Submitted data stored in**
+google_sheets - ->> qlik : **Data ingestion**\n//<size:12>[Google API]</size>//
+google_sheets - ->> google_docs : **Generated from form data**
+google_docs -UP->> google_auth : **Access restricted with**
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#00664f><color:#0b0c0c> <U+25AF></color> <color:#ffffff> person (shadow) </color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#aa0061><color:#eb6fbd> <U+25AF></color> <color:#ffffff> external_system </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 12:40:07 UTC 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
