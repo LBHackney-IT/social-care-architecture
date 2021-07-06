@@ -21,10 +21,9 @@ System_Boundary(googles, "Google") {
 }
 
 System_Boundary(system, "Social Care") {
-
   Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
   Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
-  Container(mosaic_platform_api, "Mosaic Resident Information Platform API", "Lambda, C#", "Provides person search")
+  Container(mosaic_platform_api, "Mosaic Resident Information Platform API",  "Lambda, C#", "Provides person search")
   Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
   
   Container(adult_social_care_front_end, "Adult Social Care Packages Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
