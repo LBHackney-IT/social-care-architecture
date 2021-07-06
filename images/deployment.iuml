@@ -22,7 +22,6 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
   Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
     Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
       Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
-      Container(mosaic_platform_api_api_gateway, "Mosaic Resident Information API", "API Gateway", "Provides routing and auth via API keys.")
       Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
     }
 
@@ -30,7 +29,6 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
       Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
       Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
       Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
-      Container(mosaic_platform_api_lambda, "Mosaic Resident Information API", "Lambda, C#", "Provides platform API capabilities by providing information about residents from Mosaic to the Social Care System.")
       Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
     }
 
@@ -61,10 +59,6 @@ Rel(service_api_mongodb_import_lambda, service_api_docdb, "Imports into")
 
 Rel(service_api_s3, service_api_pg_import_lambda, "Triggers", "S3 Event Notification")
 Rel(service_api_pg_import_lambda, service_api_rds, "Imports into")
-
-Rel(service_api_lambda, mosaic_platform_api_api_gateway, "Uses", "JSON/HTTPS")
-Rel(mosaic_platform_api_api_gateway, mosaic_platform_api_lambda, "Uses", "HTTPS")
-Rel(mosaic_platform_api_lambda, service_api_rds, "Reads from", "Entity Framework")
 
 Rel(service_api_lambda, platform_api_api_gateway, "Uses", "JSON/HTTPS")
 Rel(platform_api_api_gateway, platform_api_lambda, "Uses", "HTTPS")

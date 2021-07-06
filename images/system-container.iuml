@@ -24,7 +24,6 @@ System_Boundary(system, "Social Care") {
 
   Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
   Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
-  Container(mosaic_platform_api, "Mosaic Resident Information Platform API", "Lambda, C#", "Provides person search")
   Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
 }
 
@@ -39,7 +38,6 @@ Rel(social_care_front_end, social_care_service_api, "Read / Write", "JSON/HTTPS"
 Rel(social_care_front_end, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
 
 Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
-Rel(social_care_service_api, mosaic_platform_api, "Retrieves from", "JSON/HTTPS")
 
 Rel(qlik, social_care_service_api, "Hourly CSV export of form data to S3", "Qlik / AWS integration")
 
