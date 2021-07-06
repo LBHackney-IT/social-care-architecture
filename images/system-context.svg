@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="970px" preserveAspectRatio="none" style="width:761px;height:970px;background:#FFFFFF;" version="1.1" viewBox="0 0 761 970" width="761px" zoomAndPan="magnify"><defs><filter height="300%" id="f1e4oo7na0qseh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="341" x="203.8649" y="16.708">Social Care System Context Diagram</text><!--MD5=[8ae77ada6169822435c3d3bcb01b6727]
+cluster system--><rect fill="#FFFFFF" height="587" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="408" x="145.2298" y="274.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="298.2298" y="291.8047">Social Care</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="321.7298" y="306.7168">[System]</text><!--MD5=[d5d2c9d7a820e87beaf15d5cae3a50a4]
+entity social_care_application--><rect fill="#00B341" height="106.1406" style="stroke:#A4D65E;stroke-width:1.5;" width="191" x="323.7298" y="325.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="365.2298" y="350.8047">Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="368.2298" y="369.4297">Application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="421.2298" y="386.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="337.7298" y="402.4951">Allows practitioners to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="338.2298" y="418.792">view case information.</text><!--MD5=[0cebc030e76ea46a659898b416f67ffd]
+entity qlik--><rect fill="#AA0061" height="87.5156" style="stroke:#EB6FBD;stroke-width:1.5;" width="174" x="235.2298" y="757.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="123" x="260.7298" y="782.8047">Qlik Analytics</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="324.2298" y="799.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="249.2298" y="815.8701">ETL &amp; Case progress</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="287.7298" y="832.167">reporting</text><!--MD5=[fe4d4757f17ad1ff20eeccacaff789eb]
+entity google--><rect fill="#AA0061" height="120.1094" style="stroke:#EB6FBD;stroke-width:1.5;" width="166" x="161.2298" y="534.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="146" x="171.2298" y="559.8047">Google Services</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="246.2298" y="576.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="224.2298" y="592.8701">Forms</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="219.2298" y="609.167">Sheets</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="226.7298" y="625.4639">Docs</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="218.7298" y="641.7607">Groups</text><!--MD5=[564eb174a95b0d1b7998de3483d33164]
+entity care_practitioners--><rect fill="#00664F" filter="url(#f1e4oo7na0qseh)" height="185.8438" style="stroke:#0B0C0C;stroke-width:1.5;" width="156" x="60.2301" y="27.9531"/><image height="48" width="48" x="114.2301" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACGklEQVR4Xu2YoU4FMRBF3y/wC/wCv4B/CsMHrCYYEhIcAgwO8STBEdCQoEiQTzyFISQ4EgQGPNxsA1nuzLSd7pZdwc0RXLLbGabttMts1synBfvRYe9h8+RgcXdz+7BaPj+Ci+X93tXZ+n4jn3TAPo/m/PTt4/3TEFLcONyVb2XBPsXazjaKwSloQrXk62nYR0E2kcJIHV1fykESsI+SWZuuMLlynBjsbTAFHC1PqKsczYS9AQblONnCTpQDmrA3QOU5jkdyQBP2BtjJHMQjdCw5pg57A9fmknK0APYGHMEpx/5nb8ARnBo+oafXFw7ikaMbsTfAwclBPBp+UffZ9tgQckAT9jbFG82xgBpPQtM6OgIF7XFrcSzHicE+Cv5W13Zz9MMf2GeQWSd3bQLs80CwSKnQI3zrpgt7D7g4Y1IQHjUDuGagO5SnEmA/OuxHh70BvrawbjBB6HIg+ZWDh8OTmEScG455ZC9AEur6xS/DokE85AfwAx629iB+n3Wise+A94uPC0tIK1Et9t8UHxRJobSxz232LX3O9hyh8Gad2LfdhQeoIMydDK0nZK3KwaWfLeT/pjxBWEycjUwIO5nfqylldZNXW049KZd/8vxGZSm3267p8x+FMuGmMK2ElM3/n9AvTS6hxBqa9fgaLJPyWUK+9rHalX7Esm/m6A38agWhA+vXTvYtSBy3Mxx+ldBTiSQ0JuzH5gtdG077QFXZFQAAAABJRU5ErkJggg==" y="37.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="84.2301" y="100.8047">Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="111" x="82.7301" y="119.4297">Practitioner</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="140.2301" y="136.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="94.2301" y="184.1982"/><image height="48" width="44" x="94.2301" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAwCAIAAADl8g+2AAAB9ElEQVR4Xs2XMU7EMBBFcwWuwBW4Aj0VDQdwjWiQkOgooKGj2BLRIaihRaLkUHzWwnb+jGfHTjZZ6UnJzyaeb3s89g5DOFsf1qvA2s3p4+39x9vrzzfAzfnm4ejyQr7mgrUDxNt8fcbwxPX7c48V1rtIvTc4vgnyQwvWJh4HAOPUNh6s64SXJxmvBnzIFqqwroCeyUg2SB3Zjg7rCsg4GcYGcyfb0WGt0TEMEW+GstY4ubuSATx4Z4S1BtqSATx4Z4S1RtO6IGRrCqw1DsJE93R4qwVrDexVMoAHDKFsTYG1xkEs0cG9a5R45yK4TaBPMoyNdy6C28TQXrkbNlLWddBo7SwjQZGVLVRhbeL00eYgNJoYtj6MeUH+NjsI7SYi0kpn+AhrDSyNWpbhee2n+Kt8qMB6DMKnJGjtaBoqFFz56wjW/yC83LfwxNM52KXitmOyWG+xdyyjZ7Bu1FaMjfzkD9buooRgGJgEvvKsXryjbCik5RTMjrKnlMJZi6bDZ89SdJ8bWuGzZymMnJqd0SorTchX98doxaa7jhPDFEanjXS3WEJERmmR7hZYnIRiwlmjZiTnZjKx5NKI5NxMJpYpUyV5D1rRRF4gyYR8ad/kTTVeuv9jTSGv0nhZuFJF2MTClSqS9/R4sY9Se4JNrAzrNfgFXUj/Fbw6+5wAAAAASUVORK5CYII=" y="139.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="142.2301" y="184.1982"/><image height="48" width="44" x="142.2301" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAwCAIAAADl8g+2AAAB9ElEQVR4Xs2XMU7EMBBFcwWuwBW4Aj0VDQdwjWiQkOgooKGj2BLRIaihRaLkUHzWwnb+jGfHTjZZ6UnJzyaeb3s89g5DOFsf1qvA2s3p4+39x9vrzzfAzfnm4ejyQr7mgrUDxNt8fcbwxPX7c48V1rtIvTc4vgnyQwvWJh4HAOPUNh6s64SXJxmvBnzIFqqwroCeyUg2SB3Zjg7rCsg4GcYGcyfb0WGt0TEMEW+GstY4ubuSATx4Z4S1BtqSATx4Z4S1RtO6IGRrCqw1DsJE93R4qwVrDexVMoAHDKFsTYG1xkEs0cG9a5R45yK4TaBPMoyNdy6C28TQXrkbNlLWddBo7SwjQZGVLVRhbeL00eYgNJoYtj6MeUH+NjsI7SYi0kpn+AhrDSyNWpbhee2n+Kt8qMB6DMKnJGjtaBoqFFz56wjW/yC83LfwxNM52KXitmOyWG+xdyyjZ7Bu1FaMjfzkD9buooRgGJgEvvKsXryjbCik5RTMjrKnlMJZi6bDZ89SdJ8bWuGzZymMnJqd0SorTchX98doxaa7jhPDFEanjXS3WEJERmmR7hZYnIRiwlmjZiTnZjKx5NKI5NxMJpYpUyV5D1rRRF4gyYR8ad/kTTVeuv9jTSGv0nhZuFJF2MTClSqS9/R4sY9Se4JNrAzrNfgFXUj/Fbw6+5wAAAAASUVORK5CYII=" y="139.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="74.2301" y="200.4951">Adult and Children</text><!--MD5=[b940e26350b19dd30e4b2844298c79b4]
+entity data_insight_team--><rect fill="#00664F" filter="url(#f1e4oo7na0qseh)" height="105.25" style="stroke:#0B0C0C;stroke-width:1.5;" width="177" x="572.7298" y="542.4531"/><image height="48" width="48" x="637.2298" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACGklEQVR4Xu2YoU4FMRBF3y/wC/wCv4B/CsMHrCYYEhIcAgwO8STBEdCQoEiQTzyFISQ4EgQGPNxsA1nuzLSd7pZdwc0RXLLbGabttMts1synBfvRYe9h8+RgcXdz+7BaPj+Ci+X93tXZ+n4jn3TAPo/m/PTt4/3TEFLcONyVb2XBPsXazjaKwSloQrXk62nYR0E2kcJIHV1fykESsI+SWZuuMLlynBjsbTAFHC1PqKsczYS9AQblONnCTpQDmrA3QOU5jkdyQBP2BtjJHMQjdCw5pg57A9fmknK0APYGHMEpx/5nb8ARnBo+oafXFw7ikaMbsTfAwclBPBp+UffZ9tgQckAT9jbFG82xgBpPQtM6OgIF7XFrcSzHicE+Cv5W13Zz9MMf2GeQWSd3bQLs80CwSKnQI3zrpgt7D7g4Y1IQHjUDuGagO5SnEmA/OuxHh70BvrawbjBB6HIg+ZWDh8OTmEScG455ZC9AEur6xS/DokE85AfwAx629iB+n3Wise+A94uPC0tIK1Et9t8UHxRJobSxz232LX3O9hyh8Gad2LfdhQeoIMydDK0nZK3KwaWfLeT/pjxBWEycjUwIO5nfqylldZNXW049KZd/8vxGZSm3267p8x+FMuGmMK2ElM3/n9AvTS6hxBqa9fgaLJPyWUK+9rHalX7Esm/m6A38agWhA+vXTvYtSBy3Mxx+ldBTiSQ0JuzH5gtdG077QFXZFQAAAABJRU5ErkJggg==" y="552.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="151" x="582.7298" y="615.3047">Data and Insight</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="52" x="635.2298" y="633.9297">Team</text><!--MD5=[0330baf40a58d8bc5a679e634635b2ac]
+link care_practitioners to social_care_application--><path d="M216.5038,193.2631 C260.4618,233.3101 314.6038,282.6351 355.8748,320.2341 " fill="none" id="care_practitioners-to-social_care_application" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="361.8678,325.6941,357.9756,318.0881,353.9341,322.5228,361.8678,325.6941" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="146" x="288.2298" y="256.0918">Manage cases using</text><!--MD5=[9b99fa6a8dc875c1ef2186a5dae55cc3]
+link care_practitioners to qlik--><path d="M84.5584,214.0041 C46.0433,292.0491 6,406.6451 37.2301,504.9531 C71.7539,613.6291 174.2758,701.9921 246.4218,753.0401 " fill="none" id="care_practitioners-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="253.3058,757.8631,248.4752,750.8158,245.0324,755.7297,253.3058,757.8631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="94" x="49.7301" y="474.0918">View / create</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="38.2301" y="488.0605">dashboards and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="56" x="70.7301" y="502.0293">reports</text><!--MD5=[021da3b130653002e8c4ec122eee5cab]
+link care_practitioners to google--><path d="M133.1578,214.2491 C132.2308,276.8341 135.9378,360.7981 156.2298,431.9531 C165.7378,465.2931 182.9548,499.4231 199.6548,527.7051 " fill="none" id="care_practitioners-to-google" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="203.8848,534.7661,202.347,526.3617,197.1999,529.4452,203.8848,534.7661" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="157.2298" y="369.5918">Redirected by Social</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="116" x="171.2298" y="383.5605">Care App to add</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="51" x="205.7298" y="397.5293">data in</text><!--MD5=[d2c0a26ad9189578580a504843f96697]
+link data_insight_team to qlik--><path d="M575.6858,647.6831 C521.8118,680.2621 452.7978,721.9961 400.3928,753.6861 " fill="none" id="data_insight_team-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="393.4378,757.8921,401.836,756.3206,398.7319,751.186,393.4378,757.8921" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="95" x="532.2298" y="697.0918">Manage data</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="108" x="525.7298" y="711.0605">extraction and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="512.2298" y="725.0293">reporting pipelines</text><!--MD5=[d2f1188d645310f5db4c34e033b3d277]
+link qlik to social_care_application--><path d="M372.4948,757.8941 C380.3378,748.8081 387.4228,738.6901 392.2298,727.9531 C403.6468,702.4511 412.6278,533.0691 416.7558,440.3581 " fill="none" id="qlik-to-social_care_application" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="417.1168,432.1801,413.7669,440.04,419.7611,440.3047,417.1168,432.1801" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="138" x="413.2298" y="599.5918">Hourly data export</text><!--MD5=[2c085d97dcb3ed3f5d816f8b5803ac84]
+link google to qlik--><path d="M237.9728,655.1911 C237.7408,678.7101 240.4018,705.4601 250.2298,727.9531 C253.8318,736.1951 258.8168,744.0281 264.4988,751.2921 " fill="none" id="google-to-qlik" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="269.8928,757.7981,267.0954,749.7251,262.4768,753.5551,269.8928,757.7981" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="132" x="251.2298" y="704.0918">Data ingestion via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="76" x="281.2298" y="718.0605">Google API</text><!--MD5=[32a561dd8054c577b320916cacd76fb1]
+link social_care_application to google--><path d="M323.5208,421.9791 C283.6638,439.9351 245.9078,457.7511 243.2298,461.9531 C231.1638,480.8871 228.4788,504.6611 229.7628,526.7971 " fill="none" id="social_care_application-to-google" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="230.4048,534.8671,232.7611,526.6545,226.78,527.1301,230.4048,534.8671" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="244.2298" y="474.0918">Authenticates with</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="118" x="254.7298" y="488.0605">groups and view</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="271.2298" y="502.0293">Google Docs</text><rect fill="#FFFFFF" height="79.1875" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="159" x="580.7298" y="874.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="586.7298" y="894.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="647.7298" y="894.9482"/><rect fill="#00664F" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="586.7298" y="898.25"/><text fill="#0B0C0C" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="590.7298" y="911.2451">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="602.7298" y="911.2451"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="606.7298" y="911.2451">person (shadow)</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="731.7298" y="911.2451"/><rect fill="#00B341" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="586.7298" y="914.5469"/><text fill="#A4D65E" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="590.7298" y="927.542">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="602.7298" y="927.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="606.7298" y="927.542">system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="666.7298" y="927.542"/><rect fill="#AA0061" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="586.7298" y="930.8438"/><text fill="#EB6FBD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="590.7298" y="943.8389">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="602.7298" y="943.8389"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="606.7298" y="943.8389">external_system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="733.7298" y="943.8389"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="733.7298" y1="881.9531" y2="881.9531"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="733.7298" y1="898.25" y2="898.25"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="733.7298" y1="914.5469" y2="914.5469"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="733.7298" y1="930.8438" y2="930.8438"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="733.7298" y1="947.1406" y2="947.1406"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="586.7298" x2="586.7298" y1="881.9531" y2="947.1406"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="733.7298" x2="733.7298" y1="881.9531" y2="947.1406"/><!--MD5=[c356e5c9b88cd022f00503a8bf5068f7]
+@startuml
+'ref http://plantuml.com/stdlib
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
+!include <office/Users/user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+
+title Social Care System Context Diagram
+
+Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children")
+Person(data_insight_team, Data and Insight Team)
+
+System_Boundary(system, "Social Care") {
+
+  System(social_care_application, "Social Care Application", "Allows practitioners to view case information.")
+  System_Ext(qlik, "Qlik Analytics", "ETL & Case progress reporting")
+  System_Ext(google, "Google Services", "Forms\nSheets\nDocs\nGroups")
+}
+
+Rel(care_practitioners, social_care_application, "Manage cases using")
+Rel(care_practitioners, qlik, "View / create dashboards and reports")
+Rel(care_practitioners, google, "Redirected by Social Care App to add data in")
+
+Rel(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
+
+Rel(qlik, social_care_application, "Hourly data export")
+
+Rel(google, qlik, "Data ingestion via Google API")
+
+Rel(social_care_application, google, "Authenticates with groups and view Google Docs")
+
+SHOW_DYNAMIC_LEGEND()
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontStyle plain
+    BackgroundColor #FFFFFF
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor #FFFFFF
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $user [44x48/16] {
+00000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000
+000000000000000000048AA851000000000000000000
+0000000000000000059AAAAAAA710000000000000000
+00000000000000008AAAAAAAAAAA2000000000000000
+0000000000000008AAAAAAAAAAAA9100000000000000
+000000000000006AAAAAAAAAAAAAA900000000000000
+00000000000001AAAAAAAAAAAAAAAA50000000000000
+00000000000007AAAAAAAAAAAAAAAA80000000000000
+0000000000001AAAAAAAAAAAAAAAAAA2000000000000
+0000000000003AAAAAAAAAAAAAAAAAA5000000000000
+0000000000005AAAAAAAAAAAAAAAAAA8000000000000
+0000000000006AAAAAAAAAAAAAAAAAAA000000000000
+0000000000006AAAAAAAAAAAAAAAAAAA000000000000
+0000000000005AAAAAAAAAAAAAAAAAA9000000000000
+0000000000004AAAAAAAAAAAAAAAAAA6000000000000
+0000000000001AAAAAAAAAAAAAAAAAA2000000000000
+00000000000008AAAAAAAAAAAAAAAA90000000000000
+00000000000002AAAAAAAAAAAAAAAA60000000000000
+000000000000007AAAAAAAAAAAAAAA10000000000000
+0000000000000019AAAAAAAAAAAAA300000000000000
+00000000000000019AAAAAAAAAAA3000000000000000
+000000000000000017AAAAAAAA830000000000000000
+00000000000000000017AAAA83000000000000000000
+00000000000021000000011000000001000000000000
+000000000029AA30000000000000007AA40000000000
+0000000026AAAAA610000000000038AAAA8300000000
+00000005AAAAAAAAA40000000028AAAAAAAA70000000
+0000007AAAAAAAAAAAA8666679AAAAAAAAAAA9200000
+000006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900000
+000019AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA50000
+00004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA80000
+00008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1000
+0000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3000
+0002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6000
+0004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8000
+0006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA000
+0007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA100
+0008AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA300
+0009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA400
+0009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA600
+000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA700
+001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA800
+002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA800
+004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900
+005AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA900
+00000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000
+}
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam database<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam database<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+
+
+skinparam rectangle<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam database<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam queue<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+
+skinparam rectangle<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam database<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam queue<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+
+
+title Social Care System Context Diagram
+
+rectangle "<$person>\n==Social Care Practitioner\n\n <$user> <$user>\n Adult and Children" <<person>> as care_practitioners 
+rectangle "<$person>\n==Data and Insight Team" <<person>> as data_insight_team 
+
+rectangle "==Social Care\n<size:12>[System]</size>" <<boundary>> as system  {
+
+  rectangle "==Social Care Application\n\n Allows practitioners to view case information." <<system>> as social_care_application 
+  rectangle "==Qlik Analytics\n\n ETL & Case progress reporting" <<external_system>> as qlik 
+  rectangle "==Google Services\n\n Forms\nSheets\nDocs\nGroups" <<external_system>> as google 
+}
+
+care_practitioners - ->> social_care_application : **Manage cases using**
+care_practitioners - ->> qlik : **View / create dashboards and reports**
+care_practitioners - ->> google : **Redirected by Social Care App to add data in**
+
+data_insight_team - ->> qlik : **Manage data extraction and reporting pipelines**
+
+qlik - ->> social_care_application : **Hourly data export**
+
+google - ->> qlik : **Data ingestion via Google API**
+
+social_care_application - ->> google : **Authenticates with groups and view Google Docs**
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#00664f><color:#0b0c0c> <U+25AF></color> <color:#ffffff> person (shadow) </color> |
+|<#00b341><color:#a4d65e> <U+25AF></color> <color:#ffffff> system </color> |
+|<#aa0061><color:#eb6fbd> <U+25AF></color> <color:#ffffff> external_system </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 12:40:07 UTC 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
