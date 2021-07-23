@@ -1,4 +1,10 @@
-# 2. Use iso 8601 format for dates
+---
+id: use-iso-8601-format-for-dates
+title: 2. Use ISO 8601 format for dates
+slug: /decisions/use-iso-8601-format-for-dates
+---
+
+# 2. Use ISO 8601 format for dates
 
 Date: 2021-03-25
 

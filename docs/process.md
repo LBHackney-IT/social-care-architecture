@@ -1,3 +1,9 @@
+---
+id: process
+title: Process
+slug: /process
+---
+
 # Process
 
 The process of documenting the architecture is intended be:
