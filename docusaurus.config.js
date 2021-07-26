@@ -81,11 +81,15 @@ module.exports = {
           ],
         },
         {
-          title: 'Playbooks',
+          title: 'Hackney Playbooks',
           items: [
             {
-              label: 'API Playbook',
+              label: 'Directory',
               href: 'https://playbook.hackney.gov.uk',
+            },
+            {
+              label: 'API Playbook',
+              href: 'https://playbook.hackney.gov.uk/API-Playbook/',
             },
             {
               label: 'Infrastructure Playbook',
