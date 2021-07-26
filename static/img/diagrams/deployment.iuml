@@ -9,6 +9,7 @@
 title Social Care System Deployment Diagram
 
 Deployment_Node(aws, "AWS", "Region: eu-west-2") {
+
   Deployment_Node(aws_production_apis, "ProductionAPIs", "Account") {
     Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
       Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
@@ -21,7 +22,7 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
 
   Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
 
-    Container_Boundary(mosaic_production_case_management, "Case Management") {
+    Deployment_Node(mosaic_production_case_management, "Case Management") {
 
       Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
         Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
@@ -50,7 +51,7 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
 
     }
 
-    Container_Boundary(mosaic_production_finance, "Finance") {
+    Deployment_Node(mosaic_production_finance, "Finance") {
 
       Deployment_Node(aws_mosaic_production_api_gateway_finance, "API Gateway") {
         Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing and auth via API keys.")
