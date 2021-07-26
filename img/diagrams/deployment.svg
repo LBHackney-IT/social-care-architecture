@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1535px" preserveAspectRatio="none" style="width:1798px;height:1535px;background:#FFFFFF;" version="1.1" viewBox="0 0 1798 1535" width="1798px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="381" x="702" y="16.708">Social Care System Deployment Diagram</text><!--MD5=[c444070a69c905f8781a2e7d91c12e8c]
+cluster aws--><rect fill="#FFFFFF" height="1416" style="stroke:#A2A2A2;stroke-width:1.5;" width="1785" x="7" y="27.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="41" x="879" y="44.8047">AWS</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="121" x="839" y="59.7168">[Region: eu-west-2]</text><!--MD5=[9afe4c35635501012a0dcb7320185655]
+cluster aws_production_apis--><rect fill="#FFFFFF" height="436" style="stroke:#A2A2A2;stroke-width:1.5;" width="292" x="1227" y="86.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="140" x="1303" y="103.8047">ProductionAPIs</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="1344" y="118.7168">[Account]</text><!--MD5=[4d99790a7533e89ac748e5c92f1abee9]
+cluster aws_production_apis_api_gateway--><rect fill="#FFFFFF" height="138" style="stroke:#A2A2A2;stroke-width:1.5;" width="244" x="1251" y="145.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="115" x="1315.5" y="162.8047">API Gateway</text><!--MD5=[344dfee7b710af017bd4763858c9bf01]
+cluster aws_production_apis_lambda--><rect fill="#FFFFFF" height="154" style="stroke:#A2A2A2;stroke-width:1.5;" width="244" x="1251" y="344.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="71" x="1337.5" y="361.8047">Lambda</text><!--MD5=[a9a4648f9c89e539f9a25f3fa79f327f]
+cluster aws_mosaic_production--><rect fill="#FFFFFF" height="836" style="stroke:#A2A2A2;stroke-width:1.5;" width="1737" x="31" y="583.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="171" x="814" y="600.8047">Mosaic-Production</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="870.5" y="615.7168">[Account]</text><!--MD5=[31cd8d87c191cd59cf606ba94a7d6a77]
+cluster aws_mosaic_production_api_gateway--><rect fill="#FFFFFF" height="192" style="stroke:#A2A2A2;stroke-width:1.5;" width="1001" x="743" y="642.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="115" x="1186" y="659.8047">API Gateway</text><!--MD5=[df42d171e9f29d91fd0c27073df48de7]
+cluster aws_mosaic_production_lambda--><rect fill="#FFFFFF" height="224" style="stroke:#A2A2A2;stroke-width:1.5;" width="1689" x="55" y="895.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="71" x="864" y="912.8047">Lambda</text><!--MD5=[e2f399a89dbc78c804f852ad48e310b5]
+cluster aws_mosaic_production_docdb--><rect fill="#FFFFFF" height="166" style="stroke:#A2A2A2;stroke-width:1.5;" width="210" x="101" y="1212.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="119" x="146.5" y="1229.3047">DocumentDB</text><!--MD5=[89b910020ccddb2388b20a606726aad7]
+cluster aws_mosaic_production_rds--><rect fill="#FFFFFF" height="201" style="stroke:#A2A2A2;stroke-width:1.5;" width="991" x="380" y="1194.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="36" x="857.5" y="1211.8047">RDS</text><!--MD5=[c4a1337eb0a18060d499559c32ed2a2f]
+cluster aws_mosaic_production_s3--><rect fill="#FFFFFF" height="192" style="stroke:#A2A2A2;stroke-width:1.5;" width="218" x="143" y="642.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="22" x="241" y="659.8047">S3</text><!--MD5=[382823e2447b48b3c62aee15fdbbfd6d]
+entity frontend_api_gateway--><rect fill="#438DD5" height="85.1875" style="stroke:#3C7FC0;stroke-width:1.5;" width="211" x="1267.5" y="182.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="191" x="1277.5" y="207.8047">Social Care Frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1330.5" y="222.7168">[API Gateway]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1375" y="238.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1314" y="254.8389">Provides routing.</text><!--MD5=[47bca8b72ab5eab65c0ac6efc6a47f68]
+entity frontend_api_lambda--><rect fill="#438DD5" height="101.4844" style="stroke:#3C7FC0;stroke-width:1.5;" width="211" x="1267.5" y="381.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="191" x="1277.5" y="406.8047">Social Care Frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="156" x="1295" y="421.7168">[Lambda, Next.js (React)]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1375" y="437.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="1283.5" y="453.8389">Provides the UI/UX of the</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="1302" y="470.1357">Social Care System.</text><!--MD5=[6c5f5d14eff0125482ffa12bfc7089db]
+entity service_api_api_gateway--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="211" x="1267.5" y="689.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="1294" y="714.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="1324.5" y="732.9297">Viewer API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1330.5" y="747.8418">[API Gateway]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1375" y="763.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1281.5" y="779.9639">Provides routing and auth</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="1328.5" y="796.2607">via API keys.</text><!--MD5=[2577ec0bef67f8592bcf6ae3ebed6cdd]
+entity platform_api_api_gateway--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="214" x="1514" y="689.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="188" x="1524" y="714.3047">Resident Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1562.5" y="732.9297">Platform API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1578.5" y="747.8418">[API Gateway]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1623" y="763.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1529.5" y="779.9639">Provides routing and auth</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="1576.5" y="796.2607">via API keys.</text><!--MD5=[218b99ea423f42914ae1f22004d756c3]
+entity adult_social_care_builder_api_api_gateway--><rect fill="#438DD5" height="138.7344" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="1013.5" y="679.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="1042" y="704.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="1023.5" y="723.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="29" x="1108.5" y="742.0547">API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1080.5" y="756.9668">[API Gateway]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1125" y="772.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1031.5" y="789.0889">Provides routing and auth</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="1078.5" y="805.3857">via API keys.</text><!--MD5=[a8d495a0ce1514e359feff2d1c048cd1]
+entity adult_social_care_builder_transactions_api_api_gateway--><rect fill="#438DD5" height="138.7344" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="759.5" y="679.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="788" y="704.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="769.5" y="723.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="791" y="742.0547">Transactions API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="826.5" y="756.9668">[API Gateway]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="871" y="772.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="777.5" y="789.0889">Provides routing and auth</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="824.5" y="805.3857">via API keys.</text><!--MD5=[6482b6bddfc3c52ec1901adf841c96e7]
+entity service_api_lambda--><rect fill="#438DD5" height="136.4063" style="stroke:#3C7FC0;stroke-width:1.5;" width="202" x="1277" y="950.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="1299" y="975.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="1329.5" y="993.9297">Viewer API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1335.5" y="1008.8418">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1380" y="1024.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1306.5" y="1040.9639">Provides service API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="1287" y="1057.2607">capabilities to the Social</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="1330" y="1073.5576">Care System.</text><!--MD5=[688d17ed62cd75231e425911e3293be8]
+entity service_api_pg_import_lambda--><rect fill="#438DD5" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="195" x="284.5" y="957.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="303" y="982.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="110" x="324" y="1000.9297">Viewer API -</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="175" x="294.5" y="1019.5547">PostgresQL Import</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="339.5" y="1034.4668">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="384" y="1050.292"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="312.5" y="1066.5889">Imports allocations.</text><!--MD5=[77e64f92e2d9e08e9d7656a224078ed9]
+entity service_api_mongodb_import_lambda--><rect fill="#438DD5" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="178" x="71" y="957.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="81" y="982.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="110" x="102" y="1000.9297">Viewer API -</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="154" x="83" y="1019.5547">MongoDB Import</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="117.5" y="1034.4668">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="162" y="1050.292"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="93.5" y="1066.5889">Imports form data.</text><!--MD5=[868c0948b068bfb4da18df161536fbf9]
+entity platform_api_lambda--><rect fill="#438DD5" height="169" style="stroke:#3C7FC0;stroke-width:1.5;" width="214" x="1514" y="933.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="188" x="1524" y="958.8047">Resident Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1562.5" y="977.4297">Platform API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="1578.5" y="992.3418">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1623" y="1008.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="1543" y="1024.4639">Provides platform API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="1530.5" y="1040.7607">capabilities by providing</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="1534.5" y="1057.0576">historic social care data</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="1528" y="1073.3545">from Mosaic to the Social</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="1573" y="1089.6514">Care System.</text><!--MD5=[21b91dce306fa94b0892b28b9d3e52e0]
+entity adult_social_care_builder_frontend_lambda--><rect fill="#438DD5" height="155.0313" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="1022.5" y="940.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="1051" y="965.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="1032.5" y="984.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="83" x="1090.5" y="1003.0547">Frontend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="156" x="1054" y="1017.9668">[Lambda, Next.js (React)]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1134" y="1033.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="1042.5" y="1050.0889">Provides the UI/UX of the</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="1051" y="1066.3857">Adult Social Care Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="1043.5" y="1082.6826">Package Builder System.</text><!--MD5=[f67317439ffe510299d5c2cb2a14811b]
+entity adult_social_care_builder_api_lambda--><rect fill="#438DD5" height="171.3281" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="768.5" y="932.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="797" y="957.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="778.5" y="976.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="29" x="863.5" y="995.0547">API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="835.5" y="1009.9668">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="880" y="1025.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="806.5" y="1042.0889">Provides service API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="789" y="1058.3857">capabilities to the Adult</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="786" y="1074.6826">Social Care Care Package</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="821.5" y="1090.9795">Builder System.</text><!--MD5=[b2e986912e8c48455ed8cc5c4ec68d26]
+entity adult_social_care_builder_transactions_api_lambda--><rect fill="#438DD5" height="171.3281" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="514.5" y="932.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="543" y="957.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="524.5" y="976.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="546" y="995.0547">Transactions API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="85" x="581.5" y="1009.9668">[Lambda, C#]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="626" y="1025.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="538" y="1042.0889">Handles transaction and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="526.5" y="1058.3857">finance related services to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="528.5" y="1074.6826">the Adult Social Care Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="535.5" y="1090.9795">Package Builder System.</text><!--MD5=[1598b5d73aa33aed939e9b39e06b6bf6]
+entity service_api_docdb--><path d="M117,1259.4531 C117,1249.4531 206,1249.4531 206,1249.4531 C206,1249.4531 295,1249.4531 295,1259.4531 L295,1352.2656 C295,1362.2656 206,1362.2656 206,1362.2656 C206,1362.2656 117,1362.2656 117,1352.2656 L117,1259.4531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M117,1259.4531 C117,1269.4531 206,1269.4531 206,1269.4531 C206,1269.4531 295,1269.4531 295,1259.4531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="127" y="1288.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="157.5" y="1306.9297">Viewer API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="172.5" y="1321.8418">[MongoDB]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="208" y="1337.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="144.5" y="1353.9639">Stores form data.</text><!--MD5=[54aebe15b87ad3d042ed2f1804921f7c]
+entity service_api_rds--><path d="M396.5,1251.4531 C396.5,1241.4531 497,1241.4531 497,1241.4531 C497,1241.4531 597.5,1241.4531 597.5,1251.4531 L597.5,1360.5625 C597.5,1370.5625 497,1370.5625 497,1370.5625 C497,1370.5625 396.5,1370.5625 396.5,1360.5625 L396.5,1251.4531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M396.5,1251.4531 C396.5,1261.4531 497,1261.4531 497,1261.4531 C497,1261.4531 597.5,1261.4531 597.5,1251.4531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="418" y="1280.3047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="448.5" y="1298.9297">Viewer API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="79" x="457.5" y="1313.8418">[PostgreSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="499" y="1329.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="410.5" y="1345.9639">Stores persons, workers</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="441" y="1362.2607">and allocations.</text><!--MD5=[16eef7d3923f80e5a59becfab2737bec]
+entity platform_api_rds--><path d="M1141,1251.4531 C1141,1241.4531 1248,1241.4531 1248,1241.4531 C1248,1241.4531 1355,1241.4531 1355,1251.4531 L1355,1360.5625 C1355,1370.5625 1248,1370.5625 1248,1370.5625 C1248,1370.5625 1141,1370.5625 1141,1360.5625 L1141,1251.4531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M1141,1251.4531 C1141,1261.4531 1248,1261.4531 1248,1261.4531 C1248,1261.4531 1355,1261.4531 1355,1251.4531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="188" x="1151" y="1280.3047">Resident Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1189.5" y="1298.9297">Platform API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="79" x="1208.5" y="1313.8418">[PostgreSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1250" y="1329.667"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="1155" y="1345.9639">Stores historic case notes</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="1212" y="1362.2607">and visits.</text><!--MD5=[fc88866d3e9310a74a224bc60eab282f]
+entity adult_social_care_builder_api_rds--><path d="M886.5,1241.9531 C886.5,1231.9531 996,1231.9531 996,1231.9531 C996,1231.9531 1105.5,1231.9531 1105.5,1241.9531 L1105.5,1369.6875 C1105.5,1379.6875 996,1379.6875 996,1379.6875 C996,1379.6875 886.5,1379.6875 886.5,1369.6875 L886.5,1241.9531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M886.5,1241.9531 C886.5,1251.9531 996,1251.9531 996,1251.9531 C996,1251.9531 1105.5,1251.9531 1105.5,1241.9531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="915" y="1270.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="896.5" y="1289.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="29" x="981.5" y="1308.0547">API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="79" x="956.5" y="1322.9668">[PostgreSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="998" y="1338.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="922.5" y="1355.0889">Stores care package</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="938.5" y="1371.3857">related records.</text><!--MD5=[b1a932e4d2fccf10dd4af2348b751dcf]
+entity adult_social_care_builder_transactions_api_rds--><path d="M632.5,1241.9531 C632.5,1231.9531 742,1231.9531 742,1231.9531 C742,1231.9531 851.5,1231.9531 851.5,1241.9531 L851.5,1369.6875 C851.5,1379.6875 742,1379.6875 742,1379.6875 C742,1379.6875 632.5,1379.6875 632.5,1369.6875 L632.5,1241.9531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M632.5,1241.9531 C632.5,1251.9531 742,1251.9531 742,1251.9531 C742,1251.9531 851.5,1251.9531 851.5,1241.9531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="661" y="1270.8047">Adult Social Care</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="193" x="642.5" y="1289.4297">Care Package Builder</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="664" y="1308.0547">Transactions API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="79" x="702.5" y="1322.9668">[PostgreSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="744" y="1338.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="646.5" y="1355.0889">Stores transaction records</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="650" y="1371.3857">related to care packages.</text><!--MD5=[97f15536b8af36ca9cf926e9825dd23e]
+entity service_api_s3--><rect fill="#438DD5" height="138.7344" style="stroke:#3C7FC0;stroke-width:1.5;" width="186" x="159" y="679.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="173" y="704.8047">Social Care Case</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="150" x="174" y="723.4297">Viewer API - Qlik</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="62" x="221" y="742.0547">Import</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="34" x="235" y="756.9668">[CSV]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="254" y="772.792"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="173" y="789.0889">Stores allocations and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="214" y="805.3857">form data.</text><!--MD5=[d7651256a723282a77a0d061bb353f33]
+link frontend_api_gateway to frontend_api_lambda--><path d="M1373,268.4331 C1373,298.7731 1373,340.1431 1373,373.6131 " fill="none" id="frontend_api_gateway-to-frontend_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1373,381.9431,1376,373.9431,1370,373.9431,1373,381.9431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1381" y="312.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1374" y="326.0605">[HTTPS]</text><!--MD5=[e417f903fcab0e17e55a91c9bc68241b]
+link frontend_api_lambda to service_api_api_gateway--><path d="M1373,483.0181 C1373,536.3841 1373,621.6041 1373,681.0391 " fill="none" id="frontend_api_lambda-to-service_api_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1373,689.2481,1376,681.2481,1370,681.2481,1373,689.2481" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1398" y="551.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="1374" y="565.0605">[JSON/HTTPS]</text><!--MD5=[cf38ee7cbe49c325d26d8d5c35321980]
+link service_api_api_gateway to service_api_lambda--><path d="M1374.11,809.7091 C1374.84,848.7411 1375.8,900.1901 1376.59,942.1211 " fill="none" id="service_api_api_gateway-to-service_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1376.74,950.3741,1379.5895,942.3193,1373.5906,942.4318,1376.74,950.3741" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1383" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1376" y="877.0605">[HTTPS]</text><!--MD5=[ed795cfde4cf278ce83d7571798664d8]
+link service_api_lambda to service_api_rds--><path d="M1321.09,1086.6481 C1303.1,1103.2901 1281.89,1118.9301 1259,1127.9531 C1241.32,1134.9211 590.945,1125.6191 575,1135.9531 C556.939,1147.6591 536.554,1192.9411 521.155,1233.6881 " fill="none" id="service_api_lambda-to-service_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="518.339,1241.2341,523.9455,1234.7869,518.3238,1232.6901,518.339,1241.2341" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="576" y="1148.0918">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="602" y="1162.0605">writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="576.5" y="1176.0293">[Entity Framework]</text><!--MD5=[75683215a6497b423c612e449405ff8a]
+link service_api_lambda to service_api_docdb--><path d="M1321.11,1086.6971 C1303.12,1103.3401 1281.9,1118.9691 1259,1127.9531 C1234.25,1137.6611 324.92,1122.4841 302,1135.9531 C263.296,1158.6971 238.893,1203.4421 224.38,1241.1801 " fill="none" id="service_api_lambda-to-service_api_docdb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="221.432,1249.1161,227.0298,1242.6613,221.4052,1240.5722,221.432,1249.1161" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="303" y="1148.0918">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="329" y="1162.0605">writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="303.5" y="1176.0293">[Entity Framework]</text><!--MD5=[9af00abd19184f058a60fdc4d17c461f]
+link adult_social_care_builder_frontend_lambda to adult_social_care_builder_api_api_gateway--><path d="M1129.42,940.9281 C1128.22,905.4021 1126.8,863.2511 1125.6,827.6431 " fill="none" id="adult_social_care_builder_frontend_lambda-to-adult_social_care_builder_api_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1125.32,819.2121,1122.5916,827.3088,1128.5881,827.1064,1125.32,819.2121" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1152" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="1128" y="877.0605">[HTTPS/JSON]</text><!--MD5=[4b70da5be724486e4574feb6cb2ace3f]
+link adult_social_care_builder_api_api_gateway to adult_social_care_builder_api_lambda--><path d="M1059.91,819.2121 C1029.88,851.9301 993.58,891.4931 961.327,926.6431 " fill="none" id="adult_social_care_builder_api_api_gateway-to-adult_social_care_builder_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="955.772,932.6971,963.3912,928.8309,958.9703,924.7743,955.772,932.6971" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1038" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1031" y="877.0605">[HTTPS]</text><!--MD5=[abaeef7603e3fd737d7a8a26faaa85e5]
+link adult_social_care_builder_api_lambda to adult_social_care_builder_api_rds--><path d="M912.925,1103.9541 C928.662,1142.0291 947.157,1186.7781 962.696,1224.3751 " fill="none" id="adult_social_care_builder_api_lambda-to-adult_social_care_builder_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="965.763,1231.7951,965.4796,1223.2558,959.9346,1225.5478,965.763,1231.7951" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="942" y="1148.0918">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="968" y="1162.0605">writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="942.5" y="1176.0293">[Entity Framework]</text><!--MD5=[e4b2365f8bb06a738fa7b70e4e20f7fe]
+link adult_social_care_builder_transactions_api_api_gateway to adult_social_care_builder_transactions_api_lambda--><path d="M805.906,819.2121 C775.884,851.9301 739.581,891.4931 707.327,926.6431 " fill="none" id="adult_social_care_builder_transactions_api_api_gateway-to-adult_social_care_builder_transactions_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="701.772,932.6971,709.3912,928.8309,704.9703,924.7743,701.772,932.6971" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="784" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="777" y="877.0605">[HTTPS]</text><!--MD5=[122edcc6f1f901ea2810642035e46a48]
+link adult_social_care_builder_transactions_api_lambda to adult_social_care_builder_transactions_api_rds--><path d="M686.614,1104.2361 C692.72,1114.6111 698.359,1125.3131 703,1135.9531 C715.051,1163.5771 723.64,1195.4351 729.632,1223.9921 " fill="none" id="adult_social_care_builder_transactions_api_lambda-to-adult_social_care_builder_transactions_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="731.254,1231.9531,732.5967,1223.5153,726.7174,1224.713,731.254,1231.9531" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="719" y="1148.0918">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="745" y="1162.0605">writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="719.5" y="1176.0293">[Entity Framework]</text><!--MD5=[0810a48bc9f3731305e9bb22e3e0c42f]
+link adult_social_care_builder_api_lambda to adult_social_care_builder_transactions_api_api_gateway--><path d="M875.143,932.6971 C874.006,898.9531 872.706,860.3931 871.596,827.4581 " fill="none" id="adult_social_care_builder_api_lambda-to-adult_social_care_builder_transactions_api_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="871.318,819.2121,868.5897,827.3088,874.5863,827.1063,871.318,819.2121" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="899" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="875" y="877.0605">[JSON/HTTPS]</text><!--MD5=[d74bbb93a94912c611fbe3fdf6b247b0]
+link service_api_s3 to service_api_mongodb_import_lambda--><path d="M195.258,819.1521 C188.909,829.3541 183.221,840.1001 179,850.9531 C166.996,881.8181 161.911,918.1531 159.965,948.9921 " fill="none" id="service_api_s3-to-service_api_mongodb_import_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="159.515,957.1201,162.9518,949.2978,156.961,948.9668,159.515,957.1201" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="63" x="217" y="863.0918">Triggers</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="180" y="877.0605">[S3 Event Notification]</text><!--MD5=[82a47c67d1cf26c64dab6d30f858b6d8]
+link service_api_mongodb_import_lambda to service_api_docdb--><path d="M153.121,1079.7691 C151.144,1109.8181 150.923,1146.5601 157,1178.9531 C160.953,1200.0221 168.322,1222.0951 176.166,1241.7741 " fill="none" id="service_api_mongodb_import_lambda-to-service_api_docdb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="179.19,1249.1921,178.9482,1240.6515,173.3921,1242.9164,179.19,1249.1921" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="158" y="1162.0918">Imports into</text><!--MD5=[40982dab920d73acbda54dec06b3c77d]
+link service_api_s3 to service_api_pg_import_lambda--><path d="M303.224,818.9851 C309.991,829.4241 316.483,840.2811 322,850.9531 C338.13,882.1541 351.818,918.6891 362.029,949.5731 " fill="none" id="service_api_s3-to-service_api_pg_import_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="364.55,957.2971,364.9207,948.7612,359.2166,950.6222,364.55,957.2971" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="63" x="373" y="863.0918">Triggers</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="336" y="877.0605">[S3 Event Notification]</text><!--MD5=[a472638192f631323a33c0ca2861e051]
+link service_api_pg_import_lambda to service_api_rds--><path d="M406.248,1079.6511 C424.388,1124.6861 449.255,1186.4211 468.372,1233.8811 " fill="none" id="service_api_pg_import_lambda-to-service_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="471.389,1241.3711,471.1815,1232.8296,465.6163,1235.0722,471.389,1241.3711" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="444" y="1162.0918">Imports into</text><!--MD5=[294ab702d1a6499aca93bf66c90bc331]
+link service_api_lambda to platform_api_api_gateway--><path d="M1438.91,950.1481 C1466.4,919.8091 1499.3,883.5481 1529,850.9531 C1539.38,839.5621 1550.43,827.4611 1561.15,815.7481 " fill="none" id="service_api_lambda-to-platform_api_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1566.71,809.6651,1559.0957,813.541,1563.5218,817.592,1566.71,809.6651" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1554" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="1530" y="877.0605">[JSON/HTTPS]</text><!--MD5=[5d048f175a801e4579922a7c85ce0fbe]
+link platform_api_api_gateway to platform_api_lambda--><path d="M1621,809.7091 C1621,843.7741 1621,887.2951 1621,925.6941 " fill="none" id="platform_api_api_gateway-to-platform_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1621,933.8051,1624,925.8051,1618,925.8051,1621,933.8051" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1629" y="863.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1622" y="877.0605">[HTTPS]</text><!--MD5=[8013e2d987c9586ee160e0788c92f40a]
+link platform_api_lambda to platform_api_rds--><path d="M1527.39,1103.1041 C1517.25,1111.6401 1506.99,1120.0641 1497,1127.9531 C1449.49,1165.4691 1394.85,1204.7161 1348.88,1236.6931 " fill="none" id="platform_api_lambda-to-platform_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1342.16,1241.3571,1350.4435,1239.2635,1347.0244,1234.333,1342.16,1241.3571" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="83" x="1502" y="1155.0918">Reads from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="1485" y="1169.0605">[Entity Framework]</text><rect fill="#FFFFFF" height="62.8906" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="109" x="1667" y="1456.9531"/><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="97" x="1673" y="1463.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1673" y="1476.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1734" y="1476.9482"/><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1673" y="1480.25"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1677" y="1493.2451">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1689" y="1493.2451"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="1693" y="1493.2451">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1770" y="1493.2451"/><rect fill="#FFFFFF" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1673" y="1496.5469"/><text fill="#A2A2A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1677" y="1509.542">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1689" y="1509.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="1693" y="1509.542">node</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1737" y="1509.542"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1673" x2="1770" y1="1463.9531" y2="1463.9531"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1673" x2="1770" y1="1480.25" y2="1480.25"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1673" x2="1770" y1="1496.5469" y2="1496.5469"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1673" x2="1770" y1="1512.8438" y2="1512.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1673" x2="1673" y1="1463.9531" y2="1512.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1770" x2="1770" y1="1463.9531" y2="1512.8438"/><!--MD5=[6312e7617bd660e313624adee413c943]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Deployment.puml
+
+' https://github.com/plantuml-stdlib/C4-PlantUML#supported-diagram-types
+' Example diagram source: https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Deployment%20Diagram%20Sample%20-%20bigbankplc.puml
+
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+
+title Social Care System Deployment Diagram
+
+Deployment_Node(aws, "AWS", "Region: eu-west-2") {
+  Deployment_Node(aws_production_apis, "ProductionAPIs", "Account") {
+    Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
+      Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
+    }
+
+    Deployment_Node(aws_production_apis_lambda, "Lambda") {
+      Container(frontend_api_lambda, "Social Care Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Social Care System.")
+    }
+  }
+
+  Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
+    Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
+      Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
+      Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
+      Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing and auth via API keys.")
+      Container(adult_social_care_builder_transactions_api_api_gateway, "Adult Social Care Care Package Builder Transactions API", "API Gateway", "Provides routing and auth via API keys.")
+    }
+
+    Deployment_Node(aws_mosaic_production_lambda, "Lambda") {
+      Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
+      Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
+      Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
+      Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
+      Container(adult_social_care_builder_frontend_lambda, "Adult Social Care Care Package Builder Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Adult Social Care Care Package Builder System.")
+      Container(adult_social_care_builder_api_lambda, "Adult Social Care Care Package Builder API", "Lambda, C#", "Provides service API capabilities to the Adult Social Care Care Package Builder System.")
+      Container(adult_social_care_builder_transactions_api_lambda, "Adult Social Care Care Package Builder Transactions API", "Lambda, C#", "Handles transaction and finance related services to the Adult Social Care Care Package Builder System.")
+    }
+
+    Deployment_Node(aws_mosaic_production_docdb, "DocumentDB") {
+      ContainerDb(service_api_docdb, "Social Care Case Viewer API", "MongoDB", "Stores form data.")
+    }
+
+    Deployment_Node(aws_mosaic_production_rds, "RDS") {
+      ContainerDb(service_api_rds, "Social Care Case Viewer API", "PostgreSQL", "Stores persons, workers and allocations.")
+      ContainerDb(platform_api_rds, "Resident Social Care Platform API", "PostgreSQL", "Stores historic case notes and visits.")
+      ContainerDb(adult_social_care_builder_api_rds, "Adult Social Care Care Package Builder API", "PostgreSQL", "Stores care package related records.")
+      ContainerDb(adult_social_care_builder_transactions_api_rds, "Adult Social Care Care Package Builder Transactions API", "PostgreSQL", "Stores transaction records related to care packages.")
+    }
+
+    Deployment_Node(aws_mosaic_production_s3, "S3") {
+      Container(service_api_s3, "Social Care Case Viewer API - Qlik Import", "CSV", "Stores allocations and form data.")
+    }
+  }
+}
+
+Rel(frontend_api_gateway, frontend_api_lambda, "Uses", "HTTPS")
+Rel(frontend_api_lambda, service_api_api_gateway, "Uses", "JSON/HTTPS")
+
+Rel(service_api_api_gateway, service_api_lambda, "Uses", "HTTPS")
+Rel(service_api_lambda, service_api_rds, "Reads from and writes to", "Entity Framework")
+Rel(service_api_lambda, service_api_docdb, "Reads from and writes to", "Entity Framework")
+
+' Adult Social Care Care Package Builder
+Rel(adult_social_care_builder_frontend_lambda, adult_social_care_builder_api_api_gateway, "Uses", "HTTPS/JSON")
+Rel(adult_social_care_builder_api_api_gateway, adult_social_care_builder_api_lambda, "Uses", "HTTPS")
+Rel(adult_social_care_builder_api_lambda, adult_social_care_builder_api_rds, "Reads from and writes to", "Entity Framework")
+
+' Adult Social Care Care Package Transactions
+Rel(adult_social_care_builder_transactions_api_api_gateway, adult_social_care_builder_transactions_api_lambda, "Uses", "HTTPS")
+Rel(adult_social_care_builder_transactions_api_lambda, adult_social_care_builder_transactions_api_rds, "Reads from and writes to", "Entity Framework")
+
+' Adult Social Care Care Package Builder -> Adult Social Care Care Package Transactions
+Rel(adult_social_care_builder_api_lambda, adult_social_care_builder_transactions_api_api_gateway, "Uses", "JSON/HTTPS")
+
+Rel(service_api_s3, service_api_mongodb_import_lambda, "Triggers", "S3 Event Notification")
+Rel(service_api_mongodb_import_lambda, service_api_docdb, "Imports into")
+
+Rel(service_api_s3, service_api_pg_import_lambda, "Triggers", "S3 Event Notification")
+Rel(service_api_pg_import_lambda, service_api_rds, "Imports into")
+
+Rel(service_api_lambda, platform_api_api_gateway, "Uses", "JSON/HTTPS")
+Rel(platform_api_api_gateway, platform_api_lambda, "Uses", "HTTPS")
+Rel(platform_api_lambda, platform_api_rds, "Reads from", "Entity Framework")
+
+SHOW_DYNAMIC_LEGEND()
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam database<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam queue<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam actor<<node>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam person<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+
+
+skinparam rectangle<<node>> {
+    FontStyle normal
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam database<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #00664f
+    FontColor #00664f
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+skinparam person<<person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00664f
+    BorderColor #0b0c0c
+    Shadowing<<person>> true
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam database<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #00b341
+    FontColor #00b341
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+skinparam person<<system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #00b341
+    BorderColor #a4d65e
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #672146
+    FontColor #672146
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #672146
+    BorderColor #0b0c0c
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #aa0061
+    FontColor #aa0061
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #aa0061
+    BorderColor #eb6fbd
+}
+
+
+
+skinparam rectangle<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam database<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam queue<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+skinparam actor<<hackney system>> {
+    StereotypeFontColor #84bd00
+    FontColor #84bd00
+    BackgroundColor #84bd00
+}
+skinparam person<<hackney system>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #84bd00
+}
+
+
+skinparam rectangle<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam database<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam queue<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam actor<<legacy>> {
+    StereotypeFontColor #be3a34
+    FontColor #be3a34
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+skinparam person<<legacy>> {
+    StereotypeFontColor #ffffff
+    FontColor #ffffff
+    BackgroundColor #be3a34
+    BorderColor #ff6a13
+}
+
+
+
+title Social Care System Deployment Diagram
+
+rectangle "==AWS\n<size:12>[Region: eu-west-2]</size>" <<node>> as aws  {
+  rectangle "==ProductionAPIs\n<size:12>[Account]</size>" <<node>> as aws_production_apis  {
+    rectangle "==API Gateway" <<node>> as aws_production_apis_api_gateway  {
+      rectangle "==Social Care Frontend\n//<size:12>[API Gateway]</size>//\n\n Provides routing." <<container>> as frontend_api_gateway 
+    }
+
+    rectangle "==Lambda" <<node>> as aws_production_apis_lambda  {
+      rectangle "==Social Care Frontend\n//<size:12>[Lambda, Next.js (React)]</size>//\n\n Provides the UI/UX of the Social Care System." <<container>> as frontend_api_lambda 
+    }
+  }
+
+  rectangle "==Mosaic-Production\n<size:12>[Account]</size>" <<node>> as aws_mosaic_production  {
+    rectangle "==API Gateway" <<node>> as aws_mosaic_production_api_gateway  {
+      rectangle "==Social Care Case Viewer API\n//<size:12>[API Gateway]</size>//\n\n Provides routing and auth via API keys." <<container>> as service_api_api_gateway 
+      rectangle "==Resident Social Care Platform API\n//<size:12>[API Gateway]</size>//\n\n Provides routing and auth via API keys." <<container>> as platform_api_api_gateway 
+      rectangle "==Adult Social Care Care Package Builder API\n//<size:12>[API Gateway]</size>//\n\n Provides routing and auth via API keys." <<container>> as adult_social_care_builder_api_api_gateway 
+      rectangle "==Adult Social Care Care Package Builder Transactions API\n//<size:12>[API Gateway]</size>//\n\n Provides routing and auth via API keys." <<container>> as adult_social_care_builder_transactions_api_api_gateway 
+    }
+
+    rectangle "==Lambda" <<node>> as aws_mosaic_production_lambda  {
+      rectangle "==Social Care Case Viewer API\n//<size:12>[Lambda, C#]</size>//\n\n Provides service API capabilities to the Social Care System." <<container>> as service_api_lambda 
+      rectangle "==Social Care Case Viewer API - PostgresQL Import\n//<size:12>[Lambda, C#]</size>//\n\n Imports allocations." <<container>> as service_api_pg_import_lambda 
+      rectangle "==Social Care Case Viewer API - MongoDB Import\n//<size:12>[Lambda, C#]</size>//\n\n Imports form data." <<container>> as service_api_mongodb_import_lambda 
+      rectangle "==Resident Social Care Platform API\n//<size:12>[Lambda, C#]</size>//\n\n Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System." <<container>> as platform_api_lambda 
+      rectangle "==Adult Social Care Care Package Builder Frontend\n//<size:12>[Lambda, Next.js (React)]</size>//\n\n Provides the UI/UX of the Adult Social Care Care Package Builder System." <<container>> as adult_social_care_builder_frontend_lambda 
+      rectangle "==Adult Social Care Care Package Builder API\n//<size:12>[Lambda, C#]</size>//\n\n Provides service API capabilities to the Adult Social Care Care Package Builder System." <<container>> as adult_social_care_builder_api_lambda 
+      rectangle "==Adult Social Care Care Package Builder Transactions API\n//<size:12>[Lambda, C#]</size>//\n\n Handles transaction and finance related services to the Adult Social Care Care Package Builder System." <<container>> as adult_social_care_builder_transactions_api_lambda 
+    }
+
+    rectangle "==DocumentDB" <<node>> as aws_mosaic_production_docdb  {
+      database "==Social Care Case Viewer API\n//<size:12>[MongoDB]</size>//\n\n Stores form data." <<container>> as service_api_docdb 
+    }
+
+    rectangle "==RDS" <<node>> as aws_mosaic_production_rds  {
+      database "==Social Care Case Viewer API\n//<size:12>[PostgreSQL]</size>//\n\n Stores persons, workers and allocations." <<container>> as service_api_rds 
+      database "==Resident Social Care Platform API\n//<size:12>[PostgreSQL]</size>//\n\n Stores historic case notes and visits." <<container>> as platform_api_rds 
+      database "==Adult Social Care Care Package Builder API\n//<size:12>[PostgreSQL]</size>//\n\n Stores care package related records." <<container>> as adult_social_care_builder_api_rds 
+      database "==Adult Social Care Care Package Builder Transactions API\n//<size:12>[PostgreSQL]</size>//\n\n Stores transaction records related to care packages." <<container>> as adult_social_care_builder_transactions_api_rds 
+    }
+
+    rectangle "==S3" <<node>> as aws_mosaic_production_s3  {
+      rectangle "==Social Care Case Viewer API - Qlik Import\n//<size:12>[CSV]</size>//\n\n Stores allocations and form data." <<container>> as service_api_s3 
+    }
+  }
+}
+
+frontend_api_gateway - ->> frontend_api_lambda : **Uses**\n//<size:12>[HTTPS]</size>//
+frontend_api_lambda - ->> service_api_api_gateway : **Uses**\n//<size:12>[JSON/HTTPS]</size>//
+
+service_api_api_gateway - ->> service_api_lambda : **Uses**\n//<size:12>[HTTPS]</size>//
+service_api_lambda - ->> service_api_rds : **Reads from and writes to**\n//<size:12>[Entity Framework]</size>//
+service_api_lambda - ->> service_api_docdb : **Reads from and writes to**\n//<size:12>[Entity Framework]</size>//
+
+adult_social_care_builder_frontend_lambda - ->> adult_social_care_builder_api_api_gateway : **Uses**\n//<size:12>[HTTPS/JSON]</size>//
+adult_social_care_builder_api_api_gateway - ->> adult_social_care_builder_api_lambda : **Uses**\n//<size:12>[HTTPS]</size>//
+adult_social_care_builder_api_lambda - ->> adult_social_care_builder_api_rds : **Reads from and writes to**\n//<size:12>[Entity Framework]</size>//
+
+adult_social_care_builder_transactions_api_api_gateway - ->> adult_social_care_builder_transactions_api_lambda : **Uses**\n//<size:12>[HTTPS]</size>//
+adult_social_care_builder_transactions_api_lambda - ->> adult_social_care_builder_transactions_api_rds : **Reads from and writes to**\n//<size:12>[Entity Framework]</size>//
+
+adult_social_care_builder_api_lambda - ->> adult_social_care_builder_transactions_api_api_gateway : **Uses**\n//<size:12>[JSON/HTTPS]</size>//
+
+service_api_s3 - ->> service_api_mongodb_import_lambda : **Triggers**\n//<size:12>[S3 Event Notification]</size>//
+service_api_mongodb_import_lambda - ->> service_api_docdb : **Imports into**
+
+service_api_s3 - ->> service_api_pg_import_lambda : **Triggers**\n//<size:12>[S3 Event Notification]</size>//
+service_api_pg_import_lambda - ->> service_api_rds : **Imports into**
+
+service_api_lambda - ->> platform_api_api_gateway : **Uses**\n//<size:12>[JSON/HTTPS]</size>//
+platform_api_api_gateway - ->> platform_api_lambda : **Uses**\n//<size:12>[HTTPS]</size>//
+platform_api_lambda - ->> platform_api_rds : **Reads from**\n//<size:12>[Entity Framework]</size>//
+
+hide stereotype
+legend right
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#FFFFFF><color:#A2A2A2> <U+25AF></color> <color:#000000> node </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2021.9beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
