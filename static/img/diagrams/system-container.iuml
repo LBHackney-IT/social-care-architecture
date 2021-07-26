@@ -21,13 +21,17 @@ System_Boundary(googles, "Google") {
 }
 
 System_Boundary(system, "Social Care") {
-  Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
-  Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
-  Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
-  
-  Container(adult_social_care_front_end, "Adult Social Care Care Package Builder Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
-  Container(adult_social_care_api, "Adult Social Care Care Package Builder API", "Lambda, .NET (C#)", "Allows adult social care workers to build and manage care packages.")
-  Container(adult_social_care_transactions_api, "Adult Social Care Package Builder Transactions API", "Lambda, .NET (C#)", "Manages transactions and payments relating to adult social care.")
+  System_Boundary(case-management, "Case Management") {
+    Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
+    Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
+    Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
+  }
+
+  System_Boundary(finance, "Finance") {
+    Container(adult_social_care_front_end, "Adult Social Care Care Package Builder Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
+    Container(adult_social_care_api, "Adult Social Care Care Package Builder API", "Lambda, .NET (C#)", "Allows adult social care workers to build and manage care packages.")
+    Container(adult_social_care_transactions_api, "Adult Social Care Package Builder Transactions API", "Lambda, .NET (C#)", "Manages transactions and payments relating to adult social care.")
+  }
 }
 
 Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS")
