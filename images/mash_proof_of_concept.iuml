@@ -7,7 +7,7 @@
 
 title MASH data import - proof of concept
 
-Person(practitioners, Practitioner)
+Person(users, Referrer)
 
 
 System_Boundary(googles, "Google") {
@@ -28,7 +28,7 @@ Container(service_api_api_gateway, "SC API Gateway",  "API Gateway", "Provides r
 ContainerDb(service_api_rds, "Social Care DB", "PostgreSQL/MongoDB", "Data storage")
 }
 
- Rel(practitioners, gform, "Fill in a referral", "")
+ Rel(users, gform, "Fill in a referral", "")
  Rel(gform, gsheet, "Form submission", "Google automation")
  Rel(gsheet, gscript, "Form submission", "Google automation")
  Rel(gscript, gsheet, "Update row with unique ID", "Google automation")
