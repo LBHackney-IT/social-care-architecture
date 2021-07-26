@@ -21,12 +21,6 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'index',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
           href: 'https://github.com/LBHackney-IT/social-care-architecture',
           label: 'GitHub',
           position: 'right',
@@ -112,6 +106,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/LBHackney-IT/social-care-architecture/edit/main/',
