@@ -34,19 +34,19 @@ The Social Care System was created as an interim system, in response to a loss o
 
 The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care system. It depicts the key users and systems.
 
-![System Context Diagram](images/system-context.svg)
+![System Context Diagram](static/img/diagrams/system-context.svg)
 
 ## Container Diagram
 
 The [container diagram](https://c4model.com/#ContainerDiagram) shows the interacting systems within the Social Care system.
 
-![System container Diagram](images/system-container.svg)
+![System container Diagram](static/img/diagrams/system-container.svg)
 
 ## Deployment Diagram
 
 The [deployment diagram](https://c4model.com/#ContainerDiagram) shows the key aspects of the deployed system in AWS.
 
-![Deployment Diagram](images/deployment.svg)
+![Deployment Diagram](static/img/diagrams/deployment.svg)
 
 ## Architecture Decision Records
 
