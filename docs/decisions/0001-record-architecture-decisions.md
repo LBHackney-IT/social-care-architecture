@@ -1,3 +1,9 @@
+---
+id: record-architecture-decisions
+title: 1. Record architecture decisions
+slug: /decisions/record-architecture-decisions
+---
+
 # 1. Record architecture decisions
 
 Date: 2021-03-25

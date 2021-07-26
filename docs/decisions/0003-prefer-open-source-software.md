@@ -1,3 +1,9 @@
+---
+id: prefer-open-source-software
+title: 3. Prefer open source software
+slug: /decisions/prefer-open-source-software
+---
+
 # 3. Prefer open source software
 
 Date: 2021-04-09
