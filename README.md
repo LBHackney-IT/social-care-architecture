@@ -1,7 +1,8 @@
 # Social Care System Architecture
 
 This [site](https://lbhackney-it.github.io/social-care-architecture/) is a "central
-landing zone" to document and share the architecture of the Social Care System.
+landing zone" to document and share the architecture of the Hackney Social Care System.
+
 It's built using [Docusaurus](https://docusaurus.io).
 
 ## Table of contents
