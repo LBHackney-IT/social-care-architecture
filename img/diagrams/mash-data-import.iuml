@@ -11,7 +11,7 @@ Person(users, Referrer)
 
 
 System_Boundary(googles, "Google") {
-    System_Ext(gform, "Google Form", "filled in by practitioners")
+    System_Ext(gform, "Google Form", "filled in by referrer")
     System_Ext(gscript, "Google Script", "triggered by new row on Google Sheet")
     System_Ext(gsheet, "Google Sheet", "form submission data")
     System_Ext(gdoc, "Google Doc",  "document", "")
@@ -25,7 +25,7 @@ Container(aws_SQS, "AWS SQS", "message queuing service", "Creates a message queu
 Container(aws_lambda, "AWS Lambda",  "Lambda", "")
 Container(social_care_service_api,  "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.") 
 Container(service_api_api_gateway, "SC API Gateway",  "API Gateway", "Provides routing and auth via API keys.")
-ContainerDb(service_api_rds, "Social Care DB", "PostgreSQL/MongoDB", "Data storage")
+ContainerDb(service_api_rds, "Social Care Case Viewer DB", "MongoDB", "Data storage")
 }
 
  Rel(users, gform, "Fill in a referral", "")
