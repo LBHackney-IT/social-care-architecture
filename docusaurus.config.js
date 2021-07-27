@@ -42,10 +42,6 @@ module.exports = {
               label: 'Architecture Decision Records (ADRs)',
               to: '/decisions',
             },
-            {
-              label: 'Proof of concepts',
-              to: '/proof-of-concepts/mash-data-import',
-            },
           ],
         },
         {
