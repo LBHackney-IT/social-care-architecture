@@ -1,7 +1,8 @@
 # Social Care System Architecture
 
-This a "central landing zone" to document and share the architecture of the
-Social Care System. It's a website built using [Docusaurus](https://docusaurus.io).
+This [site](https://lbhackney-it.github.io/social-care-architecture/) is a "central
+landing zone" to document and share the architecture of the Social Care System.
+It's built using [Docusaurus](https://docusaurus.io).
 
 ## Table of contents
 
