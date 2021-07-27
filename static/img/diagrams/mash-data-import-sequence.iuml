@@ -1,0 +1,24 @@
+@startuml
+title MASH data import - proof of concept
+
+participant Google Form
+participant Google Sheet
+participant Google Script
+participant AWS S3
+participant AWS SQS
+participant AWS Lambda
+materialdesignicons f14d Google Doc
+participant SC API
+database SC DB
+note over Google Form,Google Sheet:Google automation
+Google Form->Google Sheet:form submission
+Google Sheet->Google Script:triggers on form submit
+Google Sheet<-Google Script:update sheet with generated unique ID
+Google Script->AWS S3:send form data and unique ID (and sheet ID?)
+AWS S3->AWS SQS:message is sent to SQS
+AWS SQS->AWS Lambda:send message to Lambda
+AWS Lambda->Google Doc:generate Google Doc using form data in message\n
+AWS Lambda->Google Sheet:update sheet with Google Doc edit URL
+AWS Lambda->SC API:send form data, unique ID and Google Doc URL
+SC API->SC DB:save data into DB
+@enduml

@@ -19,12 +19,5 @@ module.exports = {
         "decisions/prefer-open-source-software",
       ],
     },
-    {
-      type: "category",
-      label: "Proof of concepts",
-      items: [
-        "proof-of-concepts/mash-data-import",
-      ],
-    },
   ],
 };
