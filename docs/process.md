@@ -1,7 +1,6 @@
 ---
 id: process
 title: Process
-slug: /process
 ---
 
 # Process

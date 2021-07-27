@@ -1,7 +1,6 @@
 ---
 id: use-iso-8601-format-for-dates
 title: 2. Use ISO 8601 format for dates
-slug: /decisions/use-iso-8601-format-for-dates
 ---
 
 # 2. Use ISO 8601 format for dates

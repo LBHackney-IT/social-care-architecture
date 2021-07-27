@@ -13,6 +13,6 @@ information can be found on Michael Nygard's
 
 ## Records
 
-- [1. Record architecture decisions](/docs/decisions/record-architecture-decisions)
-- [2. Use ISO 8601 format for dates](/docs/decisions/use-iso-8601-format-for-dates)
-- [3. Prefer open source software](/docs/decisions/prefer-open-source-software)
+- [1. Record architecture decisions](/decisions/record-architecture-decisions)
+- [2. Use ISO 8601 format for dates](/decisions/use-iso-8601-format-for-dates)
+- [3. Prefer open source software](/decisions/prefer-open-source-software)

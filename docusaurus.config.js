@@ -5,13 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Social Care System',
   tagline: 'A central landing zone to document the architecture of the Social Care System.',
-  url: "https://lbhackney-it.github.io/social-care-architecture",
-  baseUrl: "/",
+  url: "https://lbhackney-it.github.io/",
+  baseUrl: "/social-care-architecture/",
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'logo.svg',
   organizationName: "lbhackney-it",
   projectName: "social-care-architecture",
+  trailingSlash: true,
   themeConfig: {
     navbar: {
       title: 'Social Care System',
@@ -35,15 +36,15 @@ module.exports = {
           items: [
             {
               label: 'About',
-              to: '/docs/',
+              to: '/',
             },
             {
               label: 'Architecture Decision Records (ADRs)',
-              to: '/docs/decisions',
+              to: '/decisions',
             },
             {
               label: 'Proof of concepts',
-              to: '/docs/proof-of-concepts',
+              to: '/proof-of-concepts/mash-data-import',
             },
           ],
         },

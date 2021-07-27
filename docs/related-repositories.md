@@ -1,7 +1,6 @@
 ---
 id: related-repositories
 title: Related repositories
-slug: /related-repositories
 ---
 
 # Related Repositories
