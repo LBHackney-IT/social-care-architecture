@@ -54,8 +54,9 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
     Deployment_Node(mosaic_production_finance, "Finance") {
 
       Deployment_Node(aws_mosaic_production_api_gateway_finance, "API Gateway") {
-        Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing and auth via API keys.")
-        Container(adult_social_care_builder_transactions_api_api_gateway, "Adult Social Care Care Package Builder Transactions API", "API Gateway", "Provides routing and auth via API keys.")
+        Container(adult_social_care_builder_frontend_api_gateway, "Adult Social Care Care Package Builder Frontend", "API Gateway", "Provides routing.")
+        Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing.")
+        Container(adult_social_care_builder_transactions_api_api_gateway, "Adult Social Care Care Package Builder Transactions API", "API Gateway", "Provides routing.")
       }
 
       Deployment_Node(aws_mosaic_production_lambda_finance, "Lambda") {
@@ -84,6 +85,7 @@ Rel(service_api_lambda, service_api_docdb, "Reads from and writes to", "Entity F
 Rel(adult_social_care_builder_frontend_lambda, adult_social_care_builder_api_api_gateway, "Uses", "HTTPS/JSON")
 Rel(adult_social_care_builder_api_api_gateway, adult_social_care_builder_api_lambda, "Uses", "HTTPS")
 Rel(adult_social_care_builder_api_lambda, adult_social_care_builder_api_rds, "Reads from and writes to", "Entity Framework")
+Rel(adult_social_care_builder_frontend_api_gateway, adult_social_care_builder_frontend_lambda, "Uses", "HTTPS")
 
 ' Adult Social Care Care Package Transactions
 Rel(adult_social_care_builder_transactions_api_api_gateway, adult_social_care_builder_transactions_api_lambda, "Uses", "HTTPS")
