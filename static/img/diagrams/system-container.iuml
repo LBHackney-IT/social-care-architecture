@@ -38,6 +38,7 @@ Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS
 Rel(care_practitioners, google_forms, "Redirected by Social Care App to add data in", "JSON/HTTPS")
 Rel(care_practitioners, google_docs, "Redirected by Social Care App to view form submissions", "HTTPS")
 Rel(care_practitioners, qlik, "View / create dashboards and reports")
+Rel(care_practitioners, adult_social_care_front_end, "Create care packages using", "JSON/HTTPS")
 
 Rel(adult_social_care_front_end, adult_social_care_api, "Manage care packages using", "JSON/HTTPS")
 Rel(adult_social_care_api, adult_social_care_transactions_api, "Manage transactions / payments using", "JSON/HTTPS")
