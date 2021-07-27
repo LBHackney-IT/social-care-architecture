@@ -9,6 +9,7 @@
 title Social Care System Deployment Diagram
 
 Deployment_Node(aws, "AWS", "Region: eu-west-2") {
+
   Deployment_Node(aws_production_apis, "ProductionAPIs", "Account") {
     Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
       Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
@@ -20,37 +21,56 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
   }
 
   Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
-    Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
-      Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
-      Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
-      Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing and auth via API keys.")
-      Container(adult_social_care_builder_transactions_api_api_gateway, "Adult Social Care Care Package Builder Transactions API", "API Gateway", "Provides routing and auth via API keys.")
+
+    Deployment_Node(mosaic_production_case_management, "Case Management") {
+
+      Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
+        Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
+        Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
+      }
+
+      Deployment_Node(aws_mosaic_production_lambda, "Lambda") {
+        Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
+        Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
+        Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
+        Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
+      }
+
+      Deployment_Node(aws_mosaic_production_rds, "RDS") {
+        ContainerDb(service_api_rds, "Social Care Case Viewer API", "PostgreSQL", "Stores persons, workers and allocations.")
+        ContainerDb(platform_api_rds, "Resident Social Care Platform API", "PostgreSQL", "Stores historic case notes and visits.")
+      }
+
+      Deployment_Node(aws_mosaic_production_docdb, "DocumentDB") {
+        ContainerDb(service_api_docdb, "Social Care Case Viewer API", "MongoDB", "Stores form data.")
+      }
+
+      Deployment_Node(aws_mosaic_production_s3, "S3") {
+        Container(service_api_s3, "Social Care Case Viewer API - Qlik Import", "CSV", "Stores allocations and form data.")
+      }
+
     }
 
-    Deployment_Node(aws_mosaic_production_lambda, "Lambda") {
-      Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
-      Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
-      Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
-      Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
-      Container(adult_social_care_builder_frontend_lambda, "Adult Social Care Care Package Builder Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Adult Social Care Care Package Builder System.")
-      Container(adult_social_care_builder_api_lambda, "Adult Social Care Care Package Builder API", "Lambda, C#", "Provides service API capabilities to the Adult Social Care Care Package Builder System.")
-      Container(adult_social_care_builder_transactions_api_lambda, "Adult Social Care Care Package Builder Transactions API", "Lambda, C#", "Handles transaction and finance related services to the Adult Social Care Care Package Builder System.")
+    Deployment_Node(mosaic_production_finance, "Finance") {
+
+      Deployment_Node(aws_mosaic_production_api_gateway_finance, "API Gateway") {
+        Container(adult_social_care_builder_frontend_api_gateway, "Adult Social Care Care Package Builder Frontend", "API Gateway", "Provides routing.")
+        Container(adult_social_care_builder_api_api_gateway, "Adult Social Care Care Package Builder API", "API Gateway", "Provides routing.")
+        Container(adult_social_care_builder_transactions_api_api_gateway, "Adult Social Care Care Package Builder Transactions API", "API Gateway", "Provides routing.")
+      }
+
+      Deployment_Node(aws_mosaic_production_lambda_finance, "Lambda") {
+        Container(adult_social_care_builder_frontend_lambda, "Adult Social Care Care Package Builder Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Adult Social Care Care Package Builder System.")
+        Container(adult_social_care_builder_api_lambda, "Adult Social Care Care Package Builder API", "Lambda, C#", "Provides service API capabilities to the Adult Social Care Care Package Builder System.")
+        Container(adult_social_care_builder_transactions_api_lambda, "Adult Social Care Care Package Builder Transactions API", "Lambda, C#", "Handles transaction and finance related services to the Adult Social Care Care Package Builder System.")
+      }
+
+      Deployment_Node(aws_mosaic_production_rds_finance, "RDS") {
+        ContainerDb(adult_social_care_builder_api_rds, "Adult Social Care Care Package Builder API", "PostgreSQL", "Stores care package related records.")
+        ContainerDb(adult_social_care_builder_transactions_api_rds, "Adult Social Care Care Package Builder Transactions API", "PostgreSQL", "Stores transaction records related to care packages.")
+      }
     }
 
-    Deployment_Node(aws_mosaic_production_docdb, "DocumentDB") {
-      ContainerDb(service_api_docdb, "Social Care Case Viewer API", "MongoDB", "Stores form data.")
-    }
-
-    Deployment_Node(aws_mosaic_production_rds, "RDS") {
-      ContainerDb(service_api_rds, "Social Care Case Viewer API", "PostgreSQL", "Stores persons, workers and allocations.")
-      ContainerDb(platform_api_rds, "Resident Social Care Platform API", "PostgreSQL", "Stores historic case notes and visits.")
-      ContainerDb(adult_social_care_builder_api_rds, "Adult Social Care Care Package Builder API", "PostgreSQL", "Stores care package related records.")
-      ContainerDb(adult_social_care_builder_transactions_api_rds, "Adult Social Care Care Package Builder Transactions API", "PostgreSQL", "Stores transaction records related to care packages.")
-    }
-
-    Deployment_Node(aws_mosaic_production_s3, "S3") {
-      Container(service_api_s3, "Social Care Case Viewer API - Qlik Import", "CSV", "Stores allocations and form data.")
-    }
   }
 }
 
@@ -65,6 +85,7 @@ Rel(service_api_lambda, service_api_docdb, "Reads from and writes to", "Entity F
 Rel(adult_social_care_builder_frontend_lambda, adult_social_care_builder_api_api_gateway, "Uses", "HTTPS/JSON")
 Rel(adult_social_care_builder_api_api_gateway, adult_social_care_builder_api_lambda, "Uses", "HTTPS")
 Rel(adult_social_care_builder_api_lambda, adult_social_care_builder_api_rds, "Reads from and writes to", "Entity Framework")
+Rel(adult_social_care_builder_frontend_api_gateway, adult_social_care_builder_frontend_lambda, "Uses", "HTTPS")
 
 ' Adult Social Care Care Package Transactions
 Rel(adult_social_care_builder_transactions_api_api_gateway, adult_social_care_builder_transactions_api_lambda, "Uses", "HTTPS")
