@@ -19,7 +19,7 @@ The records in this site:
 
 ## Tools
 
-Architecture decision records [ADR] are generated and maintained using Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools). As each ADR is plain text, they may be added without the tools - however the tools do help maintain consistency.
+ADRs are generated and maintained using Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools). As each ADR is plain text, they may be added without the tools - however the tools do help maintain consistency.
 
 ## Records
 
