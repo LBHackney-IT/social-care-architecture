@@ -1,6 +1,9 @@
 ﻿/.vs/*
 /.out/
 
+#plantuml
+/out
+
 # Dependencies
 /node_modules
 
