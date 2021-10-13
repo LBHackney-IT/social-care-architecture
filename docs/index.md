@@ -12,6 +12,12 @@ This a "central landing zone" to document and share the architecture of the Soci
 
 The Social Care System was created as an interim system, in response to a loss of service.
 
+## System Landscape Diagram
+
+The [landscape diagram](https://c4model.com/#SystemLandscapeDiagram) shows the highest level of the __collaborating__ systems in the Social Care system. It depicts the key users and systems.
+
+![System Landscape Diagram](/img/diagrams/system-landscape.svg)
+
 ## Context Diagram
 
 The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care system. It depicts the key users and systems.
