@@ -18,11 +18,11 @@ The [landscape diagram](https://c4model.com/#SystemLandscapeDiagram) shows the h
 
 ![System Landscape Diagram](/img/diagrams/system-landscape.svg)
 
-## Context Diagram
+## Social Care Case Management Context Diagram
 
-The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care system. It depicts the key users and systems.
+The [context diagram](https://c4model.com/#SystemContextDiagram) shows the highest level of the Social Care Case Management system. It depicts the key users and systems. At this level the Finance System and it's users are treated as external entities.
 
-![System Context Diagram](/img/diagrams/system-context.svg)
+![System Context Diagram](/img/diagrams/case-management-system-context.svg)
 
 ## Container Diagram
 
