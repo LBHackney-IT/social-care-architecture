@@ -1,0 +1,34 @@
+@startuml
+'ref http://plantuml.com/stdlib
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
+!include <office/Users/user.puml>
+!include https://raw.githubusercontent.com/LBHackney-IT/cv-19-res-support-v3/development/docs/diagrams/c4_shared.puml
+
+title Social Care Case Management Context Diagram
+
+Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children")
+Person(external_referrers, External Referrers, "<$user> <$user>\n Doctors, Police, Teachers ...")
+Person(data_insight_team, Data and Insight Team)
+
+System_Boundary(system, "Social Care") {
+  System(mash_referral, "MASH Referrals", "Processes incoming Referrals")
+  System(social_care_application, "Social Care Case Management", "Practitioners to manage case information.")
+  System_Ext(qlik, "Qlik Analytics", "ETL & Case progress reporting")
+  System_Ext(google, "Google Services", "Forms\nSheets\nDocs\nGroups")
+  System_Ext(social_care_finance, "Social Care Finance", "Care package management, procurement and accounting.")
+}
+
+Rel(care_practitioners, social_care_application, "Manage cases using")
+Rel(care_practitioners, qlik, "View / create dashboards and reports")
+Rel(care_practitioners, google, "Redirected by Social Care App to add data in")
+Rel(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
+Rel(qlik, social_care_application, "Hourly data export")
+Rel(google, qlik, "Data ingestion via Google API")
+Rel(social_care_application, google, "Authenticates with groups and view Google Docs")
+Rel(external_referrers, google, "Submit referrals via public form")
+BiRel(google, mash_referral, "Proxy referrals. Generate google docs")
+Rel(mash_referral, social_care_application, "Submit to")
+BiRel(social_care_finance, social_care_application, "TBD")
+
+SHOW_DYNAMIC_LEGEND()
+@enduml
