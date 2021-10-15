@@ -52,9 +52,9 @@ link service_api_s3 to service_api_pg_import_lambda--><path d="M1065.37,863.9661
 link service_api_pg_import_lambda to service_api_rds--><path d="M1042.85,1124.7641 C1056.72,1160.1721 1079.83,1202.1331 1116,1223.9531 C1138.85,1237.7351 1331.5,1221.3851 1356,1231.9531 C1380.82,1242.6581 1403.29,1261.1301 1421.86,1280.3241 " fill="none" id="service_api_pg_import_lambda-to-service_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1427.49,1286.2961,1424.1886,1278.4157,1419.821,1282.5296,1427.49,1286.2961" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="1117" y="1207.0918">Imports into</text><!--MD5=[294ab702d1a6499aca93bf66c90bc331]
 link service_api_lambda to platform_api_api_gateway--><path d="M1660.53,995.1361 C1642.2,974.9941 1621.92,952.9511 1603,932.9531 C1580.32,908.9791 1555.08,883.0661 1532.61,860.2681 " fill="none" id="service_api_lambda-to-platform_api_api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1526.96,854.5421,1530.4395,862.3455,1534.7125,858.1335,1526.96,854.5421" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1617" y="908.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="1593" y="922.0605">[JSON/HTTPS]</text><!--MD5=[5d048f175a801e4579922a7c85ce0fbe]
 link platform_api_api_gateway to platform_api_lambda--><path d="M1470.22,854.7091 C1471.5,888.7741 1473.13,932.2951 1474.56,970.6941 " fill="none" id="platform_api_api_gateway-to-platform_api_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1474.87,978.8051,1477.5681,970.6983,1471.5723,970.9232,1474.87,978.8051" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1481" y="908.0918">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="1474" y="922.0605">[HTTPS]</text><!--MD5=[8013e2d987c9586ee160e0788c92f40a]
-link platform_api_lambda to platform_api_rds--><path d="M1409.19,1148.1251 C1388.71,1172.7091 1366.11,1199.5461 1345,1223.9531 C1329.11,1242.3231 1311.7,1261.9661 1295.41,1280.1451 " fill="none" id="platform_api_lambda-to-platform_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1289.94,1286.2501,1297.5148,1282.2976,1293.0481,1278.2915,1289.94,1286.2501" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="83" x="1397" y="1200.0918">Reads from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="1380" y="1214.0605">[Entity Framework]</text><rect fill="#FFFFFF" height="62.8906" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="109" x="1785" y="1525.9531"/><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="97" x="1791" y="1532.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1791" y="1545.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1852" y="1545.9482"/><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1791" y="1549.25"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1795" y="1562.2451">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1807" y="1562.2451"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="1811" y="1562.2451">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1888" y="1562.2451"/><rect fill="#FFFFFF" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1791" y="1565.5469"/><text fill="#A2A2A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1795" y="1578.542">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1807" y="1578.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="1811" y="1578.542">node</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1855" y="1578.542"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1532.9531" y2="1532.9531"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1549.25" y2="1549.25"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1565.5469" y2="1565.5469"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1581.8438" y2="1581.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1791" y1="1532.9531" y2="1581.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1888" x2="1888" y1="1532.9531" y2="1581.8438"/><!--MD5=[17a81162e6dd22020d3c66d7e8f73aaf]
+link platform_api_lambda to platform_api_rds--><path d="M1409.19,1148.1251 C1388.71,1172.7091 1366.11,1199.5461 1345,1223.9531 C1329.11,1242.3231 1311.7,1261.9661 1295.41,1280.1451 " fill="none" id="platform_api_lambda-to-platform_api_rds" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1289.94,1286.2501,1297.5148,1282.2976,1293.0481,1278.2915,1289.94,1286.2501" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="83" x="1397" y="1200.0918">Reads from</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="117" x="1380" y="1214.0605">[Entity Framework]</text><rect fill="#FFFFFF" height="62.8906" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="109" x="1785" y="1525.9531"/><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="97" x="1791" y="1532.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1791" y="1545.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1852" y="1545.9482"/><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1791" y="1549.25"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1795" y="1562.2451">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1807" y="1562.2451"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="1811" y="1562.2451">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1888" y="1562.2451"/><rect fill="#FFFFFF" height="16.2969" style="stroke:none;stroke-width:1.0;" width="97" x="1791" y="1565.5469"/><text fill="#A2A2A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1795" y="1578.542">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1807" y="1578.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="1811" y="1578.542">node</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1855" y="1578.542"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1532.9531" y2="1532.9531"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1549.25" y2="1549.25"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1565.5469" y2="1565.5469"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1888" y1="1581.8438" y2="1581.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1791" x2="1791" y1="1532.9531" y2="1581.8438"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1888" x2="1888" y1="1532.9531" y2="1581.8438"/><!--MD5=[4d0b50dacd81d347c5d8d6dee252fcd1]
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Deployment.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.3.0/C4_Deployment.puml
 
 ' https://github.com/plantuml-stdlib/C4-PlantUML#supported-diagram-types
 ' Example diagram source: https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Deployment%20Diagram%20Sample%20-%20bigbankplc.puml
@@ -175,6 +175,8 @@ SHOW_DYNAMIC_LEGEND()
 
 
 
+
+
 skinparam defaultTextAlignment center
 
 skinparam wrapWidth 200
@@ -238,6 +240,17 @@ skinparam rectangle<<boundary>> {
     BackgroundColor transparent
     BorderStyle dashed
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -667,6 +680,7 @@ skinparam person<<external_container>> {
 
 
 
+
 skinparam rectangle<<node>> {
     StereotypeFontColor #000000
     FontColor #000000
@@ -1019,7 +1033,7 @@ legend right
 endlegend
 @enduml
 
-PlantUML version 1.2021.9beta2(Unknown compile time)
+PlantUML version 1.2021.12(Tue Oct 05 16:01:58 UTC 2021)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
