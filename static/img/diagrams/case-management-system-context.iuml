@@ -7,7 +7,7 @@
 title Social Care Case Management Context Diagram
 
 Person(care_practitioners, Social Care Practitioner, "<$user> <$user>\n Adult and Children")
-Person(external_referrers, External Referrers, "<$user> <$user>\n Doctors, Police, Teachers ...")
+Person_Ext(external_referrers, External Referrers, "<$user> <$user>\n Doctors, Police, Teachers ...")
 Person(data_insight_team, Data and Insight Team)
 
 System_Boundary(system, "Social Care") {
