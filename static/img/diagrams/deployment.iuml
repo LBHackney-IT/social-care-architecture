@@ -71,7 +71,26 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
       }
     }
 
+    Deployment_Node(mosaic_production_social_care_referrals, "Social Care Referrals (MASH) Data Processing") {
+      Deployment_Node(aws_mosaic_production_S3_proxy_api_gateway, "S3 API Gateway Proxy") {
+        Container(social_care_s3_api_gateway, "Social Care Referrals S3 API", "API Gateway", "Provides API proxy that accepts HTTP requests to add objects to S3")
+        Container(social_care_referrals_aws_s3, "Social Care Referrals S3 Bucket", "Mash form data, JSON", "Stores form data submitted via the MASH referral form")
+      }
+
+      Deployment_Node(aws_mosaic_production_referrals_lambda, "Lambda") {
+        Container(social_care_referrals_lambda, "Social Care Referral Form Data Ingestion", "Typescript", "Provide functionality to take the data sent from Google and process it")
+      }
+
+      Deployment_Node(aws_mosaic_production_referrals_sqs, "SQS") {
+        Container(social_care_referrals_aws_sqs, "Social Care Referrals Queue", "Main queue, Deadletter queue", "Receives a event notification from S3 when an object is created in the bucket")
+      }  
+    }
+
   }
+}
+
+Deployment_Node(google, "Google Cloud Platform", "Hackney") {
+  Container(social_care_referral_mash_apps_script, "Social Care Referrals Apps Script", "Google Apps Script", "Receives MASH form data and sends it to AWS for further processing")
 }
 
 Rel(frontend_api_gateway, frontend_api_lambda, "Uses", "HTTPS")
@@ -103,6 +122,14 @@ Rel(service_api_pg_import_lambda, service_api_rds, "Imports into")
 Rel(service_api_lambda, platform_api_api_gateway, "Uses", "JSON/HTTPS")
 Rel(platform_api_api_gateway, platform_api_lambda, "Uses", "HTTPS")
 Rel(platform_api_lambda, platform_api_rds, "Reads from", "Entity Framework")
+
+' Social Care Referrals Form Data Ingestion
+Rel(social_care_referral_mash_apps_script, social_care_s3_api_gateway, "Uses", "JSON/HTTPS")
+Rel(social_care_s3_api_gateway, social_care_referrals_aws_s3, "Creates", "JSON")
+Rel(social_care_referrals_aws_s3, social_care_referrals_aws_sqs, "Sends", "S3 Event Notification")
+Rel(social_care_referrals_aws_sqs, social_care_referrals_lambda, "Triggers", "SQS Event Notification")
+Rel(social_care_referrals_lambda, social_care_referrals_aws_s3, "Reads from", "S3 Object")
+Rel(social_care_referrals_lambda, service_api_api_gateway, "Uses", "JSON/HTTPS")
 
 SHOW_DYNAMIC_LEGEND()
 @enduml
