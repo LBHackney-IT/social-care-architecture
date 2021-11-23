@@ -82,7 +82,7 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
       }
 
       Deployment_Node(aws_mosaic_production_referrals_sqs, "SQS") {
-        Container(social_care_referrals_aws_sqs, "Social Care Referrals Queue", "Main queue, Deadletter queue", "Receives a event notification from S3 when an object is created in the bucket")
+        Container(social_care_referrals_aws_sqs, "Social Care Referrals Queue", "Main queue, Deadletter queue", "Receives an event notification from S3 when an object is created in the bucket")
       }  
     }
 
