@@ -78,7 +78,7 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
       }
 
       Deployment_Node(aws_mosaic_production_referrals_lambda, "Lambda") {
-        Container(social_care_referrals_lambda, "Social Care Referral Form Data Ingestion", "Typescript", "Provide functionality to take the data sent from Google and process it")
+        Container(social_care_referrals_lambda, "Social Care Referral Form Data Ingestion", "Typescript", "Gets referral data from S3, creates Google Doc and sends the data to be stored in the Social Care Case Management System")
       }
 
       Deployment_Node(aws_mosaic_production_referrals_sqs, "SQS") {
