@@ -24,7 +24,6 @@ System_Boundary(system, "Social Care") {
   System_Boundary(case-management, "Case Management") {
     Container(social_care_front_end, "Social Care Front End", "Lambda, Next.js (React)", "Allows practitioners to edit case information.")
     Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
-    Container(mosaic_historic_data_api, "Residents Social Care Platform API",  "Lambda, C#", "Provides historic case and visit data")
   }
 
   System_Boundary(finance, "Finance") {
@@ -47,8 +46,6 @@ Rel_D(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
 
 Rel(social_care_front_end, social_care_service_api, "Read / Write", "JSON/HTTPS")
 Rel(social_care_front_end, google_auth, "Authenticates practitioners via", "JSON/HTTPS")
-
-Rel(social_care_service_api, mosaic_historic_data_api, "Retrieves from", "JSON/HTTPS")
 
 Rel(qlik, social_care_service_api, "Hourly CSV export of form data to S3", "Qlik / AWS integration")
 
