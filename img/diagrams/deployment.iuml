@@ -10,30 +10,26 @@ title Social Care System Deployment Diagram
 
 Deployment_Node(aws, "AWS", "Region: eu-west-2") {
 
-  Deployment_Node(aws_production_apis, "ProductionAPIs", "Account") {
-    Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
-      Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
-    }
-
-    Deployment_Node(aws_production_apis_lambda, "Lambda") {
-      Container(frontend_api_lambda, "Social Care Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Social Care System.")
-    }
-  }
-
   Deployment_Node(aws_mosaic_production, "Mosaic-Production", "Account") {
 
     Deployment_Node(mosaic_production_case_management, "Case Management") {
 
+      Deployment_Node(aws_production_apis_api_gateway, "API Gateway") {
+        Container(frontend_api_gateway, "Social Care Frontend", "API Gateway", "Provides routing.")
+      }
+
+      Deployment_Node(aws_production_apis_lambda, "Lambda") {
+        Container(frontend_api_lambda, "Social Care Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Social Care System.")
+      }
+
       Deployment_Node(aws_mosaic_production_api_gateway, "API Gateway") {
         Container(service_api_api_gateway, "Social Care Case Viewer API", "API Gateway", "Provides routing and auth via API keys.")
-        Container(platform_api_api_gateway, "Resident Social Care Platform API", "API Gateway", "Provides routing and auth via API keys.")
       }
 
       Deployment_Node(aws_mosaic_production_lambda, "Lambda") {
         Container(service_api_lambda, "Social Care Case Viewer API", "Lambda, C#", "Provides service API capabilities to the Social Care System.")
         Container(service_api_pg_import_lambda, "Social Care Case Viewer API - PostgresQL Import", "Lambda, C#", "Imports allocations.")
         Container(service_api_mongodb_import_lambda, "Social Care Case Viewer API - MongoDB Import", "Lambda, C#", "Imports form data.")
-        Container(platform_api_lambda, "Resident Social Care Platform API", "Lambda, C#", "Provides platform API capabilities by providing historic social care data from Mosaic to the Social Care System.")
       }
 
       Deployment_Node(aws_mosaic_production_rds, "RDS") {
@@ -99,6 +95,7 @@ Rel(frontend_api_lambda, service_api_api_gateway, "Uses", "JSON/HTTPS")
 Rel(service_api_api_gateway, service_api_lambda, "Uses", "HTTPS")
 Rel(service_api_lambda, service_api_rds, "Reads from and writes to", "Entity Framework")
 Rel(service_api_lambda, service_api_docdb, "Reads from and writes to", "Entity Framework")
+Rel(service_api_lambda, platform_api_rds, "Reads from and writes to", "Entity Framework")
 
 ' Adult Social Care Care Package Builder
 Rel(adult_social_care_builder_frontend_lambda, adult_social_care_builder_api_api_gateway, "Uses", "HTTPS/JSON")
@@ -118,10 +115,6 @@ Rel(service_api_mongodb_import_lambda, service_api_docdb, "Imports into")
 
 Rel(service_api_s3, service_api_pg_import_lambda, "Triggers", "S3 Event Notification")
 Rel(service_api_pg_import_lambda, service_api_rds, "Imports into")
-
-Rel(service_api_lambda, platform_api_api_gateway, "Uses", "JSON/HTTPS")
-Rel(platform_api_api_gateway, platform_api_lambda, "Uses", "HTTPS")
-Rel(platform_api_lambda, platform_api_rds, "Reads from", "Entity Framework")
 
 ' Social Care Referrals Form Data Ingestion
 Rel(social_care_referral_mash_apps_script, social_care_s3_api_gateway, "Uses", "JSON/HTTPS")
