@@ -7,6 +7,11 @@ module.exports = {
         "index",
         "related-repositories",
         "process",
+        {
+          type: "category",
+          label: "System Logbook",
+          items: ["mash-referrals/introduction"],
+        },
       ],
     },
     {
