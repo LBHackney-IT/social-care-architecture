@@ -22,6 +22,7 @@ module.exports = {
         "decisions/record-architecture-decisions",
         "decisions/use-iso-8601-format-for-dates",
         "decisions/prefer-open-source-software",
+        "decisions/drop-mash-mongodb-collection",
       ],
     },
   ],
