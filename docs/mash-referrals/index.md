@@ -18,6 +18,7 @@ Decisions should be documented in the [Architecture Decision Records](../decisio
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | N/A        | Referrals - MASH Workflow Google Folder, [see Google doc](https://docs.google.com/document/d/10b-2M8UbGIILisaFJnNfQ9ztRKTmx66Ol1eLYAE07Yk/edit)                      |
 | N/A        | [Social Care Referral Form Ingestion Process Repo](https://github.com/LBHackney-IT/social-care-referral-form-ingestion)                                              |
+| Closed     | [Sort referrals by time left Backend](https://github.com/LBHackney-IT/social-care-case-viewer-api/pull/557)                                                          |
 | Spike      | Service Account Test Folder, [see Google doc](https://docs.google.com/document/d/10b-2M8UbGIILisaFJnNfQ9ztRKTmx66Ol1eLYAE07Yk/edit)                                  |
 | Spike      | [Proof of Concept Repo](https://github.com/LBHackney-IT/gforms-sns-sqs-lambda-poc)                                                                                   |
 | Spike      | Test App Script, [see Google doc](https://docs.google.com/document/d/10b-2M8UbGIILisaFJnNfQ9ztRKTmx66Ol1eLYAE07Yk/edit)                                              |
