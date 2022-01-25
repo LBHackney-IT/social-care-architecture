@@ -11,7 +11,7 @@ Accepted
 
 ## Context
 
-Early in the MASH development, a MongoDB collection was set up for storing the form data from MASH referrals form data. This was only set up in Staging. However this collection has never been unused and is no longer needed.
+Early in the MASH development, a MongoDB collection was set up for storing the form data from MASH referrals form data. This was only set up in Staging. However this collection was never used and is no longer needed.
 
 ## Decision
 
