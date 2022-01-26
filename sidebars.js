@@ -7,6 +7,11 @@ module.exports = {
         "index",
         "related-repositories",
         "process",
+        {
+          type: "category",
+          label: "System Logbook",
+          items: ["mash-referrals/introduction"],
+        },
       ],
     },
     {
@@ -17,6 +22,7 @@ module.exports = {
         "decisions/record-architecture-decisions",
         "decisions/use-iso-8601-format-for-dates",
         "decisions/prefer-open-source-software",
+        "decisions/drop-mash-mongodb-collection",
       ],
     },
   ],
