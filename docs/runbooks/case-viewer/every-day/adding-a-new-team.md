@@ -1,10 +1,10 @@
 # Add a new team to the Social Care Case Viewer API
 
 ### contents
-  1.  Retrieving details in AWS for communicating with the API
-  2.  Creating a new team JSON object
-  3.  Appending the correct value for Route to the endpoint
-  4.  Making a request to the API using CURL
+  1. Retrieving details in AWS for communicating with the API
+  2. Appending the correct value for Route to the endpoint
+  3. Creating a new team JSON object
+  4. Making a request to the API using CURL
   5. Checking it worked
   6. Making a request to the API using POSTMAN (optional)
   
