@@ -1,6 +1,5 @@
 ---
 title: Add a new team
-layout: page
 slug: /case-viewer/every-day/adding-a-new-team.md
 ---
 
