@@ -62,7 +62,7 @@ Route is defined in that file like so **[Route("api/v1/teams")]**
 
 Append ```api/v1/teams``` to the endpoint in order to target the teams resource e.g.,
 ```
-https://thecorrecturl.something.yourregion.amazonaws.com/environment/api/v1/teams
+https://<api gateway id>.execute.<aws region>.amazonaws.com/<environment>/api/v1/teams
 ```
 
 --------------------------------------------------------
@@ -101,7 +101,7 @@ curl \
 -d '{"name": "chosen_name", "context": "chosen_context"}' \ # request body containing the JSON object
 -H "Content-type: application/json" \ # set json content type
 -H "x-api-key: the_api_key_from_AWS" \ # AWS API key
-https://thecorrecturl.something.yourregion.amazonaws.com/environment/api/v1/teams \ # the full url of the endpoint
+https://<api gateway id>.execute.<aws region>.amazonaws.com/<environment>/api/v1/teams \ # the full url of the endpoint
 ~~~
 
 --------------------------------------------------------------------
