@@ -1,17 +1,24 @@
-# Add a new team to the Social Care Case Viewer API
+---
+title: Add a new team
+layout: page
+slug: /case-viewer/every-day/adding-a-new-team.md
+---
 
-### contents
-  1. Retrieving details in AWS for communicating with the API
-  2. Appending the correct value for Route to the endpoint
-  3. Creating a new team JSON object
-  4. Making a request to the API using CURL
-  5. Checking it worked
-  6. Making a request to the API using POSTMAN (optional)
-  
-  ------------------------------------------------------
+# Add a new team 
+
+There are two platforms that include the concept of teams. 
+  *  **case viewer api** (main tool) 
+  * **core pathways tool**.
+
+## This guide covers
+
+1. Retrieving details in AWS for communicating with the API
+2. How to add a new team to the case viewer api 
+3. How to add a new team to the core pathways tool
+------------------------------------------------------
 ## 1. Retrieving details in AWS for communicating with the API 
 
-Steps will cover where to look in Staging & Production AWS accounts
+The steps will cover where to look in Staging & Production AWS accounts
 
 You’ll require access to the  `Staging APIs`  AWS account for staging and `Mosaic-Production` account for production
 
@@ -26,7 +33,7 @@ In the relevant account:
     * staging =  `“staging”` 
     * production = `"mosaic-prod”`
     
--  where it says  `“Invoke URL:"`, copy the value of the URL
+-  where it says  `“Invoke URL:"`, copy the value of the URL.
 This URL is the endpoint you'll be sending the details of the new team to.
 
 - click `“API Keys”` and select the correct API key name
@@ -37,7 +44,13 @@ This URL is the endpoint you'll be sending the details of the new team to.
 
 --------------------------------------------------------
 
-## 2. Appending the correct value for Route to the endpoint
+## 2. How to add a new team to the case viewer api 
+
+  * Appending the correct value for Route to the endpoint
+  * Creating a new team JSON object
+  * Making a request to the API using CURL
+  * Checking it worked
+### -- Appending the correct value for Route to the endpoint --
 
 Once you have the correct endpoint for hitting either Staging or Production, if you wish to direct your HTTP request to the right resource in the API then you will have to append the correct route to the endpoint.
 
@@ -55,7 +68,7 @@ https://thecorrecturl.something.yourregion.amazonaws.com/environment/api/v1/team
 
 --------------------------------------------------------
 
-## 3.  Creating a new JSON team object
+### -- Creating a new JSON team object --
 
 The API expects to receive a JSON object containing the data properties needed to create a new team.
 
@@ -75,7 +88,7 @@ e.g.,
 ```
 --------------------------------------------------------
 
-##  4.  Making an API request to the API using CURL
+### --  Making an API request to the API using CURL --
 
 If you are unfamiliar with how to use CURL, see this [guide](https://dev.to/iggredible/how-to-make-api-request-with-curl-kg8)
 
@@ -94,7 +107,7 @@ https://thecorrecturl.something.yourregion.amazonaws.com/environment/api/v1/team
 
 --------------------------------------------------------------------
 
-## 5. Checking it worked
+### --  Checking it worked --
 
 Go to the Frontend application for whichever environment you added the team to
 * staging = https://social-care-service-staging.hackney.gov.uk/login
@@ -103,62 +116,11 @@ Go to the Frontend application for whichever environment you added the team to
 Click on the `"Manage workers"` link & enter a workers email to search for
 
 
-Once found, you should see & press the `“Update worker’s details”` button
+Once found, you should press the `“Update worker’s details”` button
 
 On the following page you will have the `“Team”` drop down, select this and check that it contains your newly added team for the correct service, e.g., Customer Service in the ASC service.
 
 --------------------------------------------------------------------
+## 3. How to add a new team to the core pathways tool
 
-## 6. Making an API request to the API using Postman
-
-In Postman create a new tab in which to set up your http request.
-
-If you are unsure how to do this please check the [Postman docs on sending a request](https://learning.postman.com/docs/getting-started/sending-the-first-request/#sending-a-request).
-
-Ensure you are using a `POST` method, as we are about to create a resource on a collection.
-
-Add the API endpoint to the input box next to our POST method and append the route information ("api/v1/teams”) to it, e.g.:
-```
-https://thecorrecturl.something.yourregion.amazonaws.com/staging/api/v1/teams
-```
-
-- click the tab that says `Body`
-	* When you do this, several radio button options will appear underneath.
-	* select `raw` & see a new `Text` dropdown option appear
-	* In this new option, select `JSON`
-	
-- In the larger input panel below these options we add our JSON object that will contain the new team name and the team context.
-```
-{
-“name”: “chosen_name”,
-“context”: “chosen_context”
-}
-```
-
-- select the `Authorization` tab
-	* in the ”Type” dropdown, select `API Key` and a panel should appear with the following properties:
-```
-Key
-Value
-Add to
-```
-The value for _Key_ should be `“x-api-key”`
-
-The value for _Value_ should be the `API Key` string found in the AWS account
-
-The value for _Add to_ should be `“Header”`
-
-Once all this is set up you should be able to send the new request object, containing the data to create a new team, to the endpoint
-with the correct authorisation.
-
-Press “Send” and you should receive a response object with the following data 
-
-(note: the “id” parameter value will return a new integer value for each new response object)
-```
-{
-“id”: 90,
-“name”: “Customer Service”,
-“context”: “A”
-}
-```
---------------------------------------------------------
+**@TODO Complete docs for core pathways**
