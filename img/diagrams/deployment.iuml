@@ -79,11 +79,39 @@ Deployment_Node(aws, "AWS", "Region: eu-west-2") {
 
       Deployment_Node(aws_mosaic_production_referrals_sqs, "SQS") {
         Container(social_care_referrals_aws_sqs, "Social Care Referrals Queue", "Main queue, Deadletter queue", "Receives an event notification from S3 when an object is created in the bucket")
-      }  
+      }
     }
+  }
 
+  Deployment_Node(aws_workflows_production, "Social-Care-Workflows-Production", "Account") {
+      Deployment_Node(aws_workflows_production_api_gateway, "API Gateway") {
+        Container(social_care_workflows_frontend_api_gateway, "Social Care Core Pathways Frontend", "API Gateway", "Provides routing.")
+      }
+
+      Deployment_Node(aws_workflows_production_lambda, "Lambda") {
+        Container(social_care_workflows_frontend_api_lambda, "Social Care Core Pathways Frontend", "Lambda, Next.js (React)", "Provides the UI/UX of the Social Care System.")
+      }
+
+      Deployment_Node(aws_workflows_production_rds, "RDS") {
+        ContainerDb(workflows_rds, "Social Care Core Pathways", "PostgreSQL (13)", "Stores workflows, teams, and users.")
+      }
+
+      Deployment_Node(aws_workflows_production_s3, "S3") {
+        Container(workflows_api_s3, "Social Care Core Pathways Configuration", "JSON", "Stores configuration data.")
+      }
+
+      Rel(social_care_workflows_frontend_api_gateway, social_care_workflows_frontend_api_lambda, "Uses", "HTTPS")
+      Rel(social_care_workflows_frontend_api_lambda, workflows_rds, "Reads from and writes to", "Prisma ORM")
+      Rel(social_care_workflows_frontend_api_lambda, workflows_api_s3, "Reads from", "S3 Client")
+      Rel(social_care_workflows_frontend_api_lambda, service_api_api_gateway, "Reads resident details", "HTTPS/JSON")
   }
 }
+
+Deployment_Node(contentful, "Contentful CMS", "Hackney") {
+  Container(social_care_workflows_contentful, "Social Care Core Pathways Configuration", "Contains configuration for core pathways forms, next steps and answer filters.")
+}
+
+Rel(social_care_workflows_contentful, workflows_api_s3, "Writes to", "S3 Client")
 
 Deployment_Node(google, "Google Cloud Platform", "Hackney") {
   Container(social_care_referral_mash_apps_script, "Social Care Referrals Apps Script", "Google Apps Script", "Receives MASH form data and sends it to AWS for further processing")
