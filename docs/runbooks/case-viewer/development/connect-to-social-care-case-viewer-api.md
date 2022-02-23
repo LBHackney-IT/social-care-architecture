@@ -33,5 +33,3 @@ This URL is the endpoint you'll be sending the details of the new team to.
 You will require the URL endpoint and the API Key value in order to be able to communicate with the API
 
 --------------------------------------------------------
-
-To see an example of constructing a request object to send the 
