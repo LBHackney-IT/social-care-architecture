@@ -1,6 +1,7 @@
 ---
+id: adding-a-new-team
 title: Add a new team
-slug: /case-viewer/every-day/adding-a-new-team.md
+slug: /runbooks/case-viewer/every-day/adding-a-new-team
 ---
 
 # Add a new team 
@@ -9,42 +10,15 @@ There are two platforms that include the concept of teams.
   *  **case viewer api** (main tool) 
   * **core pathways tool**.
 
-## This guide covers
+#### This guide covers
 
-1. Retrieving details in AWS for communicating with the API
-2. How to add a new team to the case viewer api 
-3. How to add a new team to the core pathways tool
+1. How to add a new team to the case viewer api 
+2. How to add a new team to the core pathways tool
 ------------------------------------------------------
-## 1. Retrieving details in AWS for communicating with the API 
 
-The steps will cover where to look in Staging & Production AWS accounts
-
-You’ll require access to the  `Staging APIs`  AWS account for staging and `Mosaic-Production` account for production
-
-In the relevant account:
--   go to  `API Gateway`
-
--  click  `“APIs”` and select the correct API: 
-   * staging =  `“staging-social-care-case-viewer-api”`
-   * production = `“mosaic-prod-social-care-case-viewer-api”`
-    
--  click  `“stages”` and select the correct stage: 
-    * staging =  `“staging”` 
-    * production = `"mosaic-prod”`
-    
--  where it says  `“Invoke URL:"`, copy the value of the URL.
-This URL is the endpoint you'll be sending the details of the new team to.
-
-- click `“API Keys”` and select the correct API key name
-   * staging =  `“api-key-social-care-case-viewer-api-staging”`
-   * production = `“api-key-social-care-case-viewer-api-mosaic-prod"`
-
-- click **show** next to `“API key”` and copy the key value. We will require this key value to set up our authorisation header.
-
---------------------------------------------------------
-
-## 2. How to add a new team to the case viewer api 
-
+## 1. How to add a new team to the case viewer api 
+#### Steps:
+  * In order to send a new team request to the API, refer to the Runbook guide on [Connecting to the case viewer API](../development/connect-to-social-care-case-viewer-api.md)
   * Appending the correct value for Route to the endpoint
   * Creating a new team JSON object
   * Making a request to the API using CURL
@@ -93,15 +67,18 @@ If you are unfamiliar with how to use CURL, see this [guide](https://dev.to/iggr
 
 Construct your CURL request like so:
 
-(here it is split onto new lines for readability with `\` and 
-commented with `#` to explain each component of the CURL request)
+(*here it is split onto new lines for readability with `\`*
+  
+*and commented with `#` to explain each component of the CURL request,*
+
+*`<>` wraps parts that require replacement by users*)
 ~~~
 curl \
 -X POST \ # send a post request
 -d '{"name": "chosen_name", "context": "chosen_context"}' \ # request body containing the JSON object
 -H "Content-type: application/json" \ # set json content type
--H "x-api-key: the_api_key_from_AWS" \ # AWS API key
-https://<api gateway id>.execute.<aws region>.amazonaws.com/<environment>/api/v1/teams \ # the full url of the endpoint
+-H "x-api-key: <the_api_key_from_AWS>" \ # AWS API key
+https://<api gateway id>.execute.<aws region>.amazonaws.com/<environment>/api/v1/<team> \ # the full url of the endpoint & resource collection
 ~~~
 
 --------------------------------------------------------------------
@@ -120,6 +97,6 @@ Once found, you should press the `“Update worker’s details”` button
 On the following page you will have the `“Team”` drop down, select this and check that it contains your newly added team for the correct service, e.g., Customer Service in the ASC service.
 
 --------------------------------------------------------------------
-## 3. How to add a new team to the core pathways tool
+## 2. How to add a new team to the core pathways tool
 
 **@TODO Complete docs for core pathways**
