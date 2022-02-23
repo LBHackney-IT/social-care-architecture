@@ -26,6 +26,10 @@ System_Boundary(system, "Social Care") {
     Container(social_care_service_api, "Social Care Case Viewer Service API", "Lambda, C#", "Provides backend API for the Social Care Front End")
   }
 
+  System_Boundary(core-pathways, "Core Pathways") {
+    Container(social_care_core_pathways, "Social Care Core Pathways Front End", "Lambda, Next.js (React)", "Allows practitioners to create new assessments against a resident/case.")
+  }
+
   System_Boundary(finance, "Finance") {
     Container(adult_social_care_front_end, "Adult Social Care Care Package Builder Front End", "Lambda, React", "Allows adult social care workers to build and manage care packages.")
     Container(adult_social_care_api, "Adult Social Care Care Package Builder API", "Lambda, .NET (C#)", "Allows adult social care workers to build and manage care packages.")
@@ -34,6 +38,7 @@ System_Boundary(system, "Social Care") {
 }
 
 Rel(care_practitioners, social_care_front_end, "Manage cases using", "JSON/HTTPS")
+Rel(care_practitioners, social_care_core_pathways, "Manage assessments for cases/residents", "JSON/HTTPS")
 Rel(care_practitioners, google_forms, "Redirected by Social Care App to add data in", "JSON/HTTPS")
 Rel(care_practitioners, google_docs, "Redirected by Social Care App to view form submissions", "HTTPS")
 Rel(care_practitioners, qlik, "View / create dashboards and reports")
@@ -41,6 +46,8 @@ Rel(care_practitioners, adult_social_care_front_end, "Create care packages using
 
 Rel(adult_social_care_front_end, adult_social_care_api, "Manage care packages using", "JSON/HTTPS")
 Rel(adult_social_care_api, adult_social_care_transactions_api, "Manage transactions / payments using", "JSON/HTTPS")
+
+Rel(social_care_core_pathways, social_care_service_api, "Get case / resident details", "JSON/HTTPS")
 
 Rel_D(data_insight_team, qlik, "Manage data extraction and reporting pipelines")
 
