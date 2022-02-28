@@ -25,5 +25,27 @@ module.exports = {
         "decisions/drop-mash-mongodb-collection",
       ],
     },
+    {
+      type: "category",
+      label: "Runbooks",
+      items: [
+        {
+          type: "category",
+          label: "Case Viewer",
+          items: [
+            {
+              type: "category",
+              label: "Everyday",
+              items: ["runbooks/case-viewer/every-day/adding-a-new-team"],
+            },
+            {
+              type: "category",
+              label: "Development",
+              items: ["runbooks/case-viewer/development/connect-to-social-care-case-viewer-api"],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
