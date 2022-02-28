@@ -51,7 +51,6 @@ name = the name of the new team
 
 context = refers to which service, 
 
-“A” for ASC or “C” for CFS
 e.g.,
 ```
 {
