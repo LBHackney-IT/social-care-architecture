@@ -49,7 +49,6 @@ module.exports = {
           type: 'category',
           label: "Core Pathways",
           items: [
-            "runbooks/core-pathways/index",
             {
               type: "category",
               label: "Every Day",
