@@ -46,7 +46,7 @@ module.exports = {
           ],
         },
         {
-          type: 'category',
+          type: "category",
           label: "Core Pathways",
           items: [
             {
@@ -58,7 +58,18 @@ module.exports = {
               ],
             },
           ],
-        }
+        },
+        {
+          type: "category",
+          label: "Social Care Search Functionality",
+          items: [
+            {
+              type: "category",
+              label: "Residents Search",
+              items: ["runbooks/search-functionality/resident-search"],
+            },
+          ],
+        },
       ],
     },
   ],
