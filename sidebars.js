@@ -72,5 +72,22 @@ module.exports = {
         },
       ],
     },
+    {
+      type: "category",
+      label: "Incidents",
+      items: [
+        {
+          type: "category",
+          label: "2022",
+          items: [
+            {
+              type: "category",
+              label: "02-03-2022",
+              items: ["incidents/2022/02-03-2022"],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
