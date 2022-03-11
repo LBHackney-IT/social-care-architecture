@@ -46,7 +46,7 @@ module.exports = {
           ],
         },
         {
-          type: 'category',
+          type: "category",
           label: "Core Pathways",
           items: [
             {
@@ -57,8 +57,16 @@ module.exports = {
                 "runbooks/core-pathways/every-day/working-with-audit-tables",
               ],
             },
+            {
+              type: "category",
+              label: "Troubleshooting",
+              items: [
+                "runbooks/core-pathways/troubleshooting/troubleshooting-development",
+                "runbooks/core-pathways/troubleshooting/troubleshooting-bugs",
+              ],
+            },
           ],
-        }
+        },
       ],
     },
     {
