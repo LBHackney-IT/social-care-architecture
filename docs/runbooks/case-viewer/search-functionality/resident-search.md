@@ -49,7 +49,7 @@ LIMIT 20 OFFSET {4};
 
 ### Following transformations
 
-- The results are transformed into a new object of type Resident Information Response (RIR) as this type is record by the frontend, however this process doesn't preserve the ordering from the previous step.
+- The results are transformed into a new object of type Resident Information Response (RIR) as this type is required by the frontend, however this process doesn't preserve the ordering from the previous step.
 - To preserve the order, we loop through the original ordered results, checking against the unordered RIR array looking for where they contain the same person ID.
 - When a match on person ID is found, we add that specific RIR record to the ordered result record object as a new parameter.
 - This preserves the order and allows us to return an object with data of type RIR that the frontend requires along with totalCount and a value for the cursor.
