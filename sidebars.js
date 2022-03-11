@@ -43,6 +43,17 @@ module.exports = {
               label: "Development",
               items: ["runbooks/case-viewer/development/connect-to-social-care-case-viewer-api"],
             },
+            {
+              type: "category",
+              label: "Social Care Search Functionality",
+              items: [
+                {
+                  type: "category",
+                  label: "Residents Search",
+                  items: ["runbooks/case-viewer/search-functionality/resident-search"],
+                },
+              ],
+            },
           ],
         },
         {
@@ -56,17 +67,6 @@ module.exports = {
                 "runbooks/core-pathways/every-day/connecting-to-live-databases",
                 "runbooks/core-pathways/every-day/working-with-audit-tables",
               ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Social Care Search Functionality",
-          items: [
-            {
-              type: "category",
-              label: "Residents Search",
-              items: ["runbooks/search-functionality/resident-search"],
             },
           ],
         },
