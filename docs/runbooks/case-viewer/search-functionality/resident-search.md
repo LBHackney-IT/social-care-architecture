@@ -129,7 +129,7 @@ The following are all string types and optional
 `name`
 `date_of_birth`
 `postcode`
-`mosaic_id`
+`person_id`
 `cursor`
 
 ## Github PR's
