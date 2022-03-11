@@ -132,9 +132,6 @@ The following are all string types and optional
 `person_id`
 `cursor`
 
-## Jira Tickets
-Proposed SQL queries: https://hackney.atlassian.net/browse/SCT-1735
-
 ## Github PR's
 
 PR's that contain the main bulk of the new endpoint changes
